@@ -4,7 +4,7 @@ const app = {
 };
 
 const CONFIG = {
-    START_DATE: new Date(2026, 4, 1),
+    START_DATE: new Date(2026, 4, 21),
     TOTAL_DAYS: 100,
     STORAGE_KEY: 'currentDay',
 };
