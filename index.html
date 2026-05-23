@@ -7,107 +7,91 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="header-content">
-                <h1 class="title">100 In Christ</h1>
-                <p class="subtitle">Building consciousness of your identity in Christ</p>
-            </div>
-            <div class="header-controls">
-                <div class="day-display">
-                    <span class="day-number" id="dayNumber">1</span>
-                    <span class="day-label">of 100</span>
-                </div>
-                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </header>
+    <header class="header">
+        <div class="header-left">
+            <h1 class="site-title">100 Days In Christ</h1>
+        </div>
+        <div class="header-center">
+            <button class="timeline-button" id="timelineButton" aria-label="Jump to day">
+                <span class="timeline-label">Day <span id="dayNumber">1</span> of 100</span>
+                <svg class="timeline-arc" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#3d5a80;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#c9a96a;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#4a8a7f;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect class="arc-background" x="0" y="8" width="100" height="4" rx="2"/>
+                    <rect class="arc-progress" x="0" y="8" width="1" height="4" rx="2" fill="url(#arcGradient)"/>
+                    <circle class="arc-dot" cx="1" cy="10" r="1.5" fill="#c9a96a"/>
+                </svg>
+            </button>
+        </div>
+        <button class="menu-button" id="menuToggle" aria-label="Menu">☰</button>
+    </header>
 
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <!-- Section Header -->
-            <section class="section-header" id="sectionHeader">
-                <h2 id="sectionTitle"></h2>
-                <p id="sectionDescription"></p>
+    <!-- Day Grid Modal -->
+    <div id="dayGrid" class="day-grid-modal">
+        <div class="day-grid-content">
+            <button class="grid-close" id="gridClose">×</button>
+            <div class="grid-sections" id="gridSections"></div>
+        </div>
+    </div>
+
+    <div id="gridOverlay" class="grid-overlay"></div>
+
+    <main class="content">
+        <article class="day-article">
+            <h2 id="dayTitle" class="article-title"></h2>
+
+            <section class="article-section">
+                <h3 class="section-label">Scripture</h3>
+                <div id="mainScripture" class="scripture"></div>
             </section>
 
-            <!-- Day Content -->
-            <article class="day-content" id="dayContent">
-                <h3 id="dayTitle" class="day-title"></h3>
+            <section class="article-section" id="supportingSection">
+                <h3 class="section-label">Supporting</h3>
+                <div id="supportingScriptures" class="scripture-list"></div>
+            </section>
 
-                <div class="content-block">
-                    <h4>Main Scripture</h4>
-                    <div id="mainScripture" class="scripture-text"></div>
-                </div>
+            <section class="article-section">
+                <h3 class="section-label">The Reality</h3>
+                <div id="reality" class="reality"></div>
+            </section>
 
-                <div class="content-block">
-                    <h4>Supporting Scriptures</h4>
-                    <ul id="supportingScriptures" class="scripture-list"></ul>
-                </div>
+            <section class="article-section">
+                <h3 class="section-label">Important</h3>
+                <div id="important" class="important"></div>
+            </section>
 
-                <div class="content-block">
-                    <h4>The Reality to Master</h4>
-                    <div id="reality" class="reality-text"></div>
-                </div>
+            <section class="article-section" id="recommendedSection">
+                <h3 class="section-label">Recommended Reading</h3>
+                <div id="recommended" class="recommended-reading"></div>
+            </section>
+        </article>
 
-                <div class="content-block">
-                    <h4>Important</h4>
-                    <div id="important" class="important-text"></div>
-                </div>
+        <nav class="nav-controls">
+            <button id="prevButton" class="nav-btn">← Previous Day</button>
+            <button id="nextButton" class="nav-btn">Next Day →</button>
+        </nav>
+    </main>
 
-                <div class="content-block" id="recommendedBlock">
-                    <h4>Recommended Reading</h4>
-                    <p id="recommended" class="recommended-text"></p>
-                </div>
-            </article>
-
-            <!-- Navigation -->
-            <nav class="navigation">
-                <button class="nav-button nav-prev" id="prevButton">← Previous</button>
-                <button class="nav-button nav-next" id="nextButton">Next →</button>
-            </nav>
-        </main>
-
-        <!-- Sidebar Menu -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <h2>Navigation</h2>
-                <button class="close-button" id="closeMenu" aria-label="Close menu">×</button>
+    <aside id="menu" class="menu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button id="closeMenu" class="close-btn">×</button>
+        </div>
+        <div class="menu-content">
+            <div class="menu-section">
+                <label for="dayInput">Jump to day:</label>
+                <input type="number" id="dayInput" min="1" max="100" placeholder="1-100">
             </div>
+            <button id="resetButton" class="reset-btn">Reset to Today</button>
+        </div>
+    </aside>
 
-            <div class="sidebar-section">
-                <h3>Sections</h3>
-                <div class="sections-list" id="sectionsList"></div>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Jump to Day</h3>
-                <input
-                    type="number"
-                    id="dayJump"
-                    class="day-jump-input"
-                    min="1"
-                    max="100"
-                    placeholder="Enter day number"
-                    aria-label="Jump to day number"
-                >
-            </div>
-
-            <div class="sidebar-section">
-                <h3>Schedule</h3>
-                <p class="schedule-info">Start Date: <strong>May 20, 2026</strong></p>
-                <p class="schedule-info">Current Day: <strong id="scheduleCurrentDay">1</strong></p>
-                <button class="reset-button" id="resetButton">Reset to Today</button>
-            </div>
-        </aside>
-
-        <!-- Overlay for mobile menu -->
-        <div class="overlay" id="overlay"></div>
-    </div>
+    <div id="overlay" class="overlay"></div>
 
     <script src="script.js"></script>
 </body>

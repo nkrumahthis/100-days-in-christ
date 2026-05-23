@@ -1,63 +1,31 @@
-/* ===== Application State ===== */
 const app = {
     data: null,
     currentDay: 1,
-    daysPerPage: 1,
 };
 
-/* ===== Configuration ===== */
 const CONFIG = {
-    START_DATE: new Date(2026, 4, 20), // May 20, 2026 (month is 0-indexed)
+    START_DATE: new Date(2026, 4, 20),
     TOTAL_DAYS: 100,
-    CONTENT_FILE: 'content.json',
     STORAGE_KEY: 'currentDay',
 };
 
-/* ===== DOM Elements ===== */
-const dom = {
-    dayNumber: document.getElementById('dayNumber'),
-    dayTitle: document.getElementById('dayTitle'),
-    sectionTitle: document.getElementById('sectionTitle'),
-    sectionDescription: document.getElementById('sectionDescription'),
-    mainScripture: document.getElementById('mainScripture'),
-    supportingScriptures: document.getElementById('supportingScriptures'),
-    reality: document.getElementById('reality'),
-    important: document.getElementById('important'),
-    recommended: document.getElementById('recommended'),
-    recommendedBlock: document.getElementById('recommendedBlock'),
-    prevButton: document.getElementById('prevButton'),
-    nextButton: document.getElementById('nextButton'),
-    menuToggle: document.getElementById('menuToggle'),
-    sidebar: document.getElementById('sidebar'),
-    overlay: document.getElementById('overlay'),
-    closeMenu: document.getElementById('closeMenu'),
-    sectionsList: document.getElementById('sectionsList'),
-    dayJump: document.getElementById('dayJump'),
-    resetButton: document.getElementById('resetButton'),
-    scheduleCurrentDay: document.getElementById('scheduleCurrentDay'),
-    dayContent: document.getElementById('dayContent'),
-    sectionHeader: document.getElementById('sectionHeader'),
-};
-
-/* ===== Initialize Application ===== */
-async function init() {
+/* ===== Initialize ===== */
+document.addEventListener('DOMContentLoaded', async () => {
     await loadContent();
     setupEventListeners();
-    restoreDayFromStorage();
+    restoreDay();
     render();
-}
+});
 
-/* ===== Load Content from JSON ===== */
+/* ===== Load Content ===== */
 async function loadContent() {
     try {
-        const response = await fetch(CONFIG.CONTENT_FILE);
-        if (!response.ok) {
-            throw new Error(`Failed to load content: ${response.status}`);
-        }
+        const response = await fetch('content.json');
         app.data = await response.json();
     } catch (error) {
         console.error('Error loading content:', error);
-        dom.dayContent.innerHTML = '<p>Error loading content. Please refresh the page.</p>';
+        document.querySelector('.day-article').innerHTML =
+            '<p>Error loading content. Please refresh the page.</p>';
     }
 }
 
@@ -65,30 +33,17 @@ async function loadContent() {
 function calculateCurrentDay() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-
     const startDate = new Date(CONFIG.START_DATE);
     startDate.setHours(0, 0, 0, 0);
-
-    const timeDiff = today - startDate;
-    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-
-    // Day 1 starts on the start date, so add 1
-    let calculatedDay = Math.max(1, daysDiff + 1);
-
-    // Cap at total days
-    calculatedDay = Math.min(calculatedDay, CONFIG.TOTAL_DAYS);
-
-    return calculatedDay;
+    const daysDiff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+    return Math.max(1, Math.min(daysDiff + 1, CONFIG.TOTAL_DAYS));
 }
 
-/* ===== LocalStorage Management ===== */
 function getCurrentDay() {
     const stored = localStorage.getItem(CONFIG.STORAGE_KEY);
     if (stored) {
         const day = parseInt(stored, 10);
-        if (day >= 1 && day <= CONFIG.TOTAL_DAYS) {
-            return day;
-        }
+        if (day >= 1 && day <= CONFIG.TOTAL_DAYS) return day;
     }
     return calculateCurrentDay();
 }
@@ -100,37 +55,26 @@ function setCurrentDay(day) {
     }
 }
 
-function restoreDayFromStorage() {
+function restoreDay() {
     app.currentDay = getCurrentDay();
 }
 
 function resetToToday() {
     localStorage.removeItem(CONFIG.STORAGE_KEY);
     app.currentDay = calculateCurrentDay();
+    closeDayGrid();
+    closeMenu();
     render();
-}
-
-/* ===== Get Section Data ===== */
-function getSectionForDay(dayNumber) {
-    if (!app.data || !app.data.sections) return null;
-
-    for (const section of app.data.sections) {
-        const [start, end] = section.dayRange;
-        if (dayNumber >= start && dayNumber <= end) {
-            return section;
-        }
-    }
-    return null;
 }
 
 /* ===== Navigation ===== */
-function goToDay(dayNumber) {
-    if (dayNumber < 1 || dayNumber > CONFIG.TOTAL_DAYS) return;
-
-    setCurrentDay(dayNumber);
+function goToDay(day) {
+    if (day < 1 || day > CONFIG.TOTAL_DAYS) return;
+    setCurrentDay(day);
+    closeDayGrid();
     closeMenu();
     render();
-    document.querySelector('.day-content').scrollIntoView({ behavior: 'smooth' });
+    window.scrollTo(0, 0);
 }
 
 function nextDay() {
@@ -145,171 +89,204 @@ function prevDay() {
     }
 }
 
-/* ===== Menu Management ===== */
+/* ===== Day Grid ===== */
+function openDayGrid() {
+    document.getElementById('dayGrid').classList.add('active');
+    document.getElementById('gridOverlay').classList.add('active');
+    renderDayGrid();
+}
+
+function closeDayGrid() {
+    document.getElementById('dayGrid').classList.remove('active');
+    document.getElementById('gridOverlay').classList.remove('active');
+}
+
+function renderDayGrid() {
+    if (!app.data?.sections) return;
+
+    const container = document.getElementById('gridSections');
+    container.innerHTML = '';
+
+    app.data.sections.forEach((section) => {
+        const sectionDiv = document.createElement('div');
+        sectionDiv.className = `grid-section section-${section.id}`;
+
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'grid-section-title';
+        titleDiv.innerHTML = `
+            <div class="grid-section-indicator"></div>
+            <span>${section.title}</span>
+        `;
+
+        const daysDiv = document.createElement('div');
+        daysDiv.className = 'grid-days';
+
+        const [start, end] = section.dayRange;
+        for (let day = start; day <= end; day++) {
+            const btn = document.createElement('button');
+            btn.className = 'day-button';
+            if (day === app.currentDay) btn.classList.add('current');
+            btn.textContent = day;
+            btn.addEventListener('click', () => goToDay(day));
+            daysDiv.appendChild(btn);
+        }
+
+        sectionDiv.appendChild(titleDiv);
+        sectionDiv.appendChild(daysDiv);
+        container.appendChild(sectionDiv);
+    });
+}
+
+/* ===== Menu ===== */
 function toggleMenu() {
-    dom.sidebar.classList.toggle('active');
-    dom.overlay.classList.toggle('active');
+    document.getElementById('menu').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
 }
 
 function closeMenu() {
-    dom.sidebar.classList.remove('active');
-    dom.overlay.classList.remove('active');
+    document.getElementById('menu').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
 }
 
-function setupMenuToggle() {
-    dom.menuToggle.addEventListener('click', toggleMenu);
-    dom.closeMenu.addEventListener('click', closeMenu);
-    dom.overlay.addEventListener('click', closeMenu);
+/* ===== Render Recommended Reading ===== */
+function renderRecommended(text) {
+    const container = document.getElementById('recommended');
+    container.innerHTML = '';
 
-    // Close menu on escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            closeMenu();
-        }
-    });
+    // Map of known books and their links
+    const bookMappings = {
+        'Brennan Manning - The Ragamuffin Gospel': {
+            type: 'pdf',
+            icon: '📄',
+            title: 'The Ragamuffin Gospel',
+            author: 'Brennan Manning',
+            url: '/readings/The-Ragamuffin-Gospel-by-Manning-Brennan.pdf',
+        },
+        'Oyedepo - Satan Get Lost': {
+            type: 'pdf',
+            icon: '📄',
+            title: 'Satan Get Lost',
+            author: 'Bishop David Oyedepo',
+            url: '/readings/satan get lost - Oyedepo.pdf',
+        },
+        'Romans': {
+            type: 'bible',
+            icon: '✝️',
+            title: 'Romans',
+            author: 'Bible Gateway',
+            url: 'https://www.biblegateway.com/passages/search/?search=Romans&version=KJV',
+        },
+    };
+
+    const mapping = bookMappings[text];
+
+    if (mapping) {
+        const link = document.createElement('a');
+        link.href = mapping.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.className = 'reading-link';
+
+        link.innerHTML = `
+            <div class="reading-link-icon">${mapping.icon}</div>
+            <div class="reading-link-content">
+                <div class="reading-link-title">${mapping.title}</div>
+                <div class="reading-link-meta">${mapping.author}</div>
+            </div>
+        `;
+
+        container.appendChild(link);
+    } else {
+        // Fallback for unknown recommendations
+        container.textContent = text;
+    }
 }
 
-/* ===== Render Content ===== */
+/* ===== Render ===== */
 function render() {
-    if (!app.data || !app.data.days) return;
+    if (!app.data?.days) return;
 
     const dayData = app.data.days[app.currentDay.toString()];
-    if (!dayData) {
-        dom.dayContent.innerHTML = '<p>Day not found.</p>';
-        return;
-    }
+    if (!dayData) return;
 
-    const section = getSectionForDay(app.currentDay);
-    if (!section) {
-        dom.dayContent.innerHTML = '<p>Section not found.</p>';
-        return;
-    }
+    // Update header
+    document.getElementById('dayNumber').textContent = app.currentDay;
 
-    // Update section header colors
-    const sectionColor = section.bgColor || '#f8fafc';
-    const textColor = section.textColor || '#0d47a1';
-    dom.sectionHeader.style.backgroundColor = sectionColor;
-    dom.sectionTitle.style.color = textColor;
-    dom.sectionDescription.style.color = textColor;
+    // Update progress arc
+    const progressPercent = (app.currentDay / CONFIG.TOTAL_DAYS) * 100;
+    document.querySelector('.arc-progress').style.width = progressPercent + '%';
+    document.querySelector('.arc-dot').setAttribute('cx', progressPercent);
 
-    // Update day display
-    dom.dayNumber.textContent = app.currentDay;
-    dom.scheduleCurrentDay.textContent = app.currentDay;
+    // Update article
+    document.getElementById('dayTitle').textContent = dayData.title;
 
-    // Update section info
-    dom.sectionTitle.textContent = section.title;
-    dom.sectionDescription.textContent = section.description;
+    // Main scripture
+    document.querySelector('.scripture').textContent = dayData.mainScripture || '';
 
-    // Update day content
-    dom.dayTitle.textContent = dayData.title;
-    dom.dayTitle.style.color = textColor;
+    // Supporting scriptures
+    const supportingContainer = document.getElementById('supportingScriptures');
+    supportingContainer.innerHTML = '';
 
-    // Main Scripture
-    dom.mainScripture.innerHTML = escapeHtml(dayData.mainScripture);
-
-    // Supporting Scriptures
-    dom.supportingScriptures.innerHTML = '';
     if (dayData.supportingScriptures && Array.isArray(dayData.supportingScriptures)) {
-        dayData.supportingScriptures.forEach((scripture) => {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${escapeHtml(scripture.reference)}:</strong> ${escapeHtml(scripture.text)}`;
-            dom.supportingScriptures.appendChild(li);
-        });
+        if (dayData.supportingScriptures.length > 0) {
+            dayData.supportingScriptures.forEach((scripture) => {
+                const div = document.createElement('div');
+                div.textContent = scripture;
+                supportingContainer.appendChild(div);
+            });
+            document.getElementById('supportingSection').classList.remove('empty');
+        } else {
+            document.getElementById('supportingSection').classList.add('empty');
+        }
     }
 
-    // Reality to Master
-    dom.reality.innerHTML = escapeHtml(dayData.reality);
+    // Reality
+    document.getElementById('reality').textContent = dayData.reality || '';
 
     // Important
-    dom.important.innerHTML = escapeHtml(dayData.important);
+    document.getElementById('important').textContent = dayData.important || '';
 
-    // Recommended Reading
+    // Recommended
     if (dayData.recommended) {
-        dom.recommended.textContent = dayData.recommended;
-        dom.recommendedBlock.style.display = 'block';
+        renderRecommended(dayData.recommended);
+        document.getElementById('recommendedSection').style.display = 'block';
     } else {
-        dom.recommendedBlock.style.display = 'none';
+        document.getElementById('recommendedSection').style.display = 'none';
     }
 
-    // Update navigation button states
-    dom.prevButton.disabled = app.currentDay === 1;
-    dom.nextButton.disabled = app.currentDay === CONFIG.TOTAL_DAYS;
-
-    // Update day jump input
-    dom.dayJump.value = '';
-    dom.dayJump.placeholder = `Jump to day (1-${CONFIG.TOTAL_DAYS})`;
-
-    // Update sections list
-    renderSectionsList();
-}
-
-function renderSectionsList() {
-    dom.sectionsList.innerHTML = '';
-
-    if (!app.data || !app.data.sections) return;
-
-    app.data.sections.forEach((section) => {
-        const div = document.createElement('div');
-        div.className = 'section-item';
-        if (getSectionForDay(app.currentDay) === section) {
-            div.classList.add('active');
-        }
-
-        const [start, end] = section.dayRange;
-        div.textContent = `${section.title} (Days ${start}-${end})`;
-
-        div.addEventListener('click', () => {
-            goToDay(start);
-        });
-
-        dom.sectionsList.appendChild(div);
-    });
+    // Navigation buttons
+    document.getElementById('prevButton').disabled = app.currentDay === 1;
+    document.getElementById('nextButton').disabled = app.currentDay === CONFIG.TOTAL_DAYS;
 }
 
 /* ===== Event Listeners ===== */
 function setupEventListeners() {
     // Navigation
-    dom.prevButton.addEventListener('click', prevDay);
-    dom.nextButton.addEventListener('click', nextDay);
+    document.getElementById('prevButton').addEventListener('click', prevDay);
+    document.getElementById('nextButton').addEventListener('click', nextDay);
+
+    // Timeline
+    document.getElementById('timelineButton').addEventListener('click', openDayGrid);
+    document.getElementById('gridClose').addEventListener('click', closeDayGrid);
+    document.getElementById('gridOverlay').addEventListener('click', closeDayGrid);
 
     // Menu
-    setupMenuToggle();
+    document.getElementById('menuToggle').addEventListener('click', toggleMenu);
+    document.getElementById('closeMenu').addEventListener('click', closeMenu);
+    document.getElementById('overlay').addEventListener('click', closeMenu);
+    document.getElementById('resetButton').addEventListener('click', resetToToday);
 
-    // Day Jump
-    dom.dayJump.addEventListener('keypress', (e) => {
+    // Day input
+    document.getElementById('dayInput').addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
-            const day = parseInt(dom.dayJump.value, 10);
-            if (!isNaN(day)) {
-                goToDay(day);
-            }
+            const day = parseInt(e.target.value, 10);
+            if (!isNaN(day)) goToDay(day);
         }
     });
-
-    // Reset Button
-    dom.resetButton.addEventListener('click', resetToToday);
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            prevDay();
-        } else if (e.key === 'ArrowRight') {
-            nextDay();
-        }
+        if (e.key === 'ArrowLeft') prevDay();
+        if (e.key === 'ArrowRight') nextDay();
     });
 }
-
-/* ===== Utility Functions ===== */
-function escapeHtml(text) {
-    if (!text) return '';
-    const map = {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#039;',
-    };
-    return text.replace(/[&<>"']/g, (char) => map[char]);
-}
-
-/* ===== Start Application ===== */
-document.addEventListener('DOMContentLoaded', init);
