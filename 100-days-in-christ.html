@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 In Christ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0d47a1 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Today's Day Button */
+        .today-banner {
+            background: #f0f9ff;
+            border-left: 4px solid #0d47a1;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .today-info h2 {
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .today-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .today-btn {
+            background: #0d47a1;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            flex: 1;
+            padding: 0 1rem 1rem;
+        }
+
+        .section-label {
+            color: #0d47a1;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .day-title {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Recommended Reading */
+        .recommended {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .recommended-title {
+            font-weight: 600;
+            color: #856404;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .recommended-text {
+            color: #856404;
+            font-size: 0.95rem;
+        }
+
+        /* Scripture Sections */
+        .scripture-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-heading {
+            font-weight: 700;
+            color: #1e3a8a;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e7ff;
+        }
+
+        .scripture-text {
+            background: #f8fafc;
+            padding: 1rem;
+            border-left: 3px solid #0d47a1;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-style: italic;
+            color: #333;
+        }
+
+        .scripture-reference {
+            font-weight: 600;
+            color: #0d47a1;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .supporting-scriptures {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .supporting-scripture {
+            padding: 0.75rem;
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .supporting-reference {
+            font-weight: 600;
+            color: #0d47a1;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .supporting-text {
+            color: #475569;
+            font-size: 0.85rem;
+        }
+
+        .reality, .important {
+            background: #f0fdf4;
+            padding: 1rem;
+            border-left: 3px solid #16a34a;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .reality-title, .important-title {
+            font-weight: 700;
+            color: #15803d;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .reality p, .important p {
+            color: #166534;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .reality p:last-child, .important p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Navigation */
+        .nav-footer {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            justify-content: space-between;
+        }
+
+        .nav-btn {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #0d47a1;
+            transition: all 0.3s;
+        }
+
+        .nav-btn:active {
+            background: #e0e7ff;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Day Selector */
+        .day-selector {
+            padding: 1rem;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .selector-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            color: #666;
+        }
+
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 0.5rem;
+        }
+
+        .day-box {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .day-box.today {
+            background: #0d47a1;
+            color: white;
+            border-color: #1e3a8a;
+            transform: scale(1.05);
+        }
+
+        .day-box.has-content {
+            background: #dbeafe;
+            color: #0d47a1;
+        }
+
+        .day-box.has-content.section-2 {
+            background: #ccfbf1;
+            color: #0d7377;
+        }
+
+        .day-box.no-content {
+            background: #f3f4f6;
+            color: #9ca3af;
+            cursor: default;
+        }
+
+        .day-box:not(.no-content):active {
+            transform: scale(0.95);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #999;
+        }
+
+        .empty-state p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .day-selector {
+                order: -1;
+                width: 200px;
+                border-right: 1px solid #e5e7eb;
+                border-top: none;
+                overflow-y: auto;
+                max-height: calc(100vh - 60px);
+            }
+
+            .content-wrapper {
+                flex: 1;
+                max-width: 600px;
+                padding: 0 2rem 2rem;
+            }
+
+            header {
+                order: -2;
+                flex-basis: 100%;
+            }
+
+            .nav-footer {
+                order: 100;
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>100 In Christ</h1>
+            <div class="progress"><span id="dayCount">Day 1</span> of 100</div>
+        </header>
+
+        <div class="today-banner">
+            <div class="today-info">
+                <h2 id="todayLabel">Today</h2>
+                <p id="todayDate"></p>
+            </div>
+            <button class="today-btn" onclick="goToToday()">Today</button>
+        </div>
+
+        <div class="content-wrapper" id="contentWrapper">
+            <!-- Content loads here -->
+        </div>
+
+        <div class="day-selector">
+            <div class="selector-title">Jump to Day</div>
+            <div class="day-grid" id="dayGrid">
+                <!-- Day boxes load here -->
+            </div>
+        </div>
+
+        <div class="nav-footer">
+            <button class="nav-btn" id="prevBtn" onclick="previousDay()">← Previous</button>
+            <button class="nav-btn" id="nextBtn" onclick="nextDay()">Next →</button>
+        </div>
+    </div>
+
+    <script>
+        // Content data - Days 1-20
+        const contentData = {
+            1: {
+                section: "Section 1: Sin Dealt With",
+                title: "You are forgiven",
+                recommended: "Romans",
+                mainScripture: "Colossians 1:14 — 'In whom we have redemption through his blood, the forgiveness of sins…'",
+                supportingScriptures: [
+                    "1 John 2:12 — 'I write unto you, little children, because your sins are forgiven you for his name's sake.'",
+                    "Colossians 2:13 — 'And you, being dead in your sins… hath he quickened together with him, having forgiven you all trespasses.'",
+                    "Romans 8:1 — 'There is therefore now no condemnation to them which are in Christ Jesus.'",
+                    "Hebrews 10:17 — 'Their sins and iniquities will I remember no more.'"
+                ],
+                reality: "Your sins are forgiven. Not some. Not if you're good enough. Not pending. All trespasses are forgiven. This is not a feeling—it's a fact that happened at the cross and remains your legal status before God forever.\n\nMore importantly: God's love toward you does not change based on your sin. He is not withholding forgiveness waiting for you to deserve it. He is not holding a record in secret. His stance toward you is settled. He is not angry at you. He does not move away from you based on what you've done.",
+                important: "The hardest part of forgiveness is believing it's that complete and that God's heart toward you never changes. We're trained to believe consequences must be paid, records must be kept, people must remember, and love must be earned. But God says: deleted. Forgotten. No record. And His affection toward you is the same whether you sin or not.\n\nThis is the foundation for all that follows—if you cannot believe God's love is unchanging, you cannot walk in righteousness, access, or power. You'll be trying to earn something already freely given.\n\nYoung women often carry secret shame or think certain sins are 'too big' to be forgiven, or they believe God is secretly disappointed. This is a lie. The blood covers everything. God is not secretly mad at you."
+            },
+            2: {
+                section: "Section 1: Sin Dealt With",
+                title: "Grace for the weak",
+                recommended: "Romans",
+                mainScripture: "Romans 5:20 — 'Moreover the law entered that the offence might abound. But where sin abounded, grace did much more abound.'",
+                supportingScriptures: [
+                    "2 Corinthians 12:9 — 'My grace is sufficient for thee: for my strength is made perfect in weakness.'",
+                    "Romans 5:8 — 'But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.'",
+                    "Hebrews 4:15–16 — 'For we have not an high priest which cannot be touched with the feeling of our infirmities… Let us therefore come boldly unto the throne of grace.'",
+                    "Romans 8:26 — 'Likewise the Spirit also helpeth our infirmities…'"
+                ],
+                reality: "The pattern of grace is not 'get strong, then God will accept you.' The pattern is 'come weak, and receive transforming grace.' You don't have to pretend to be fine. You don't have to fix yourself first.\n\nGrace is not thin or measured. Where you are most broken, grace abounds more. The greater your need, the greater His sufficiency. And this grace comes with no shift in God's affection toward you—He is not disgusted by your weakness. He is not disappointed you're not stronger. His love for you in weakness is exactly the same as His love for you when you're strong.",
+                important: "This matters enormously for young women who've been taught (formally or by culture) that God helps those who help themselves, or that you need to 'get it together' before you can be spiritual. That's a lie rooted in works, not grace. The moment you're aware you can't, you're in the exact position for grace to work.\n\nGod doesn't turn away from weakness. He leans toward it. He meets you there. His stance toward you doesn't change based on how strong or broken you are."
+            },
+            3: {
+                section: "Section 1: Sin Dealt With",
+                title: "You have no record of sins",
+                recommended: "Romans",
+                mainScripture: "Hebrews 10:17 — 'Their sins and iniquities will I remember no more.'",
+                supportingScriptures: [
+                    "Isaiah 43:25 — 'I, even I, am he that blotteth out thy transgressions for mine own sake… and will not remember thy sins.'",
+                    "Psalm 103:3 — 'Who forgiveth all thine iniquities… [and] heals all thy diseases.'",
+                    "Micah 7:19 — 'Thou wilt cast all their sins into the depths of the sea.'",
+                    "Isaiah 38:17 — 'Thou hast cast all my sins behind thy back.'"
+                ],
+                reality: "Your sin record is blank before God. Not 'in progress.' Not 'pending review.' Not 'you're on probation.' Blank. This is your standing eternally.\n\nThis doesn't mean consequences disappear (natural law still operates). It means God is not against you. He is not holding anything over your head. He has not filed you away under 'sinner who needs to prove herself.' He chooses to remember your sin no more. His relationship with you is not based on a record He's keeping. You do not appear to heaven with a stain on you, and He does not see you that way either.",
+                important: "Satan's primary tool is accusation: 'God will never forgive that,' 'You're disqualified,' 'He's holding this against you,' 'He's secretly keeping score.' But the scripture is clear: God chooses to remember your sin no more. His stance toward you is not conditional on your behavior. When accusation comes, the answer isn't self-defense or self-improvement—it's the blood. The record is gone. God is not holding it. He has not moved away."
+            },
+            4: {
+                section: "Section 1: Sin Dealt With",
+                title: "The divine exchange",
+                recommended: "Romans",
+                mainScripture: "2 Corinthians 5:21 — 'For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.'",
+                supportingScriptures: [
+                    "Isaiah 53:6 — 'All we like sheep have gone astray; we have turned every one to his own way; and the Lord hath laid on him the iniquity of us all.'",
+                    "1 Peter 2:24 — 'Who his own self bare our sins in his own body on the tree, that we, being dead to sins, should live unto righteousness.'",
+                    "Galatians 3:13 — 'Christ hath redeemed us from the curse of the law, being made a curse for us.'",
+                    "Romans 4:25 — 'Who was delivered for our offences, and was raised again for our justification.'"
+                ],
+                reality: "You did not keep your sin. Jesus took it. You did not keep your shame. Jesus took it. You did not keep the curse. Jesus took it.\n\nIn exchange, you received what Jesus has: righteousness, acceptance, blessing, redemption. This is not a loan. It's a permanent exchange. God does not take it back. Even if you sin, your righteousness in Christ is not revoked. It's not conditional. It's not fragile.\n\nYour job is not to become righteous. Your job is to believe you are righteous and live accordingly. Your standing with God is not dependent on your next choice. It is established in Christ.",
+                important: "Many believers think: 'I sin, God forgives, I'm back to zero.' But that's not the exchange. The exchange is: 'I sin, Jesus took it, I receive His righteousness.' You don't go back to zero; you go to positive—you're credited with Christ's standing, not just cleared of debt. Your righteousness isn't revoked when you stumble.\n\nThis is what makes boldness possible. You're not approaching God as a former sinner trying to be good. You're approaching Him as someone wearing Jesus' righteousness—and that doesn't come off."
+            },
+            5: {
+                section: "Section 1: Sin Dealt With",
+                title: "You are justified",
+                recommended: "Romans",
+                mainScripture: "Romans 5:18–19 — 'Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the free gift came upon all men unto justification of life...'",
+                supportingScriptures: [
+                    "Romans 3:28 — 'Therefore we conclude that a man is justified by faith without the deeds of the law.'",
+                    "Romans 4:25 — 'Who was delivered for our offences, and was raised again for our justification.'",
+                    "Galatians 2:16 — 'Knowing that a man is not justified by the works of the law, but by the faith of Jesus Christ...'",
+                    "1 Corinthians 1:30 — 'But of him are ye in Christ Jesus, who of God is made unto us wisdom, and righteousness, and sanctification, and redemption.'"
+                ],
+                reality: "To be justified means to be declared righteous. Not made righteous through effort. Declared. Acquitted. Accepted. This happened at the cross and stands forever. The verdict cannot be overturned.\n\nYou are not in a perpetual courtroom trying to defend yourself or re-argue your case. The verdict is in. You are justified. God looks at you and sees not a sinner, but someone who has Christ's righteousness credited to her account. That ruling doesn't change based on your next decision.",
+                important: "Justification is not about feeling righteous. It's about being declared righteous by God. A young woman may feel shame, insecurity, or unworthiness—and that's normal human emotion. But her standing before God is not based on her feelings. It's based on the verdict: justified. And verdicts, once rendered, do not get reversed.\n\nEven if you stumble, your justification doesn't get un-declared. God is not reopening the case."
+            },
+            6: {
+                section: "Section 1: Sin Dealt With",
+                title: "You are righteous",
+                recommended: "Romans",
+                mainScripture: "2 Corinthians 5:21 — 'For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.'",
+                supportingScriptures: [
+                    "Romans 5:17 — 'For if by one man's offence death reigned by one; much more they which receive abundance of grace and of the gift of righteousness shall reign in life by one, Jesus Christ.'",
+                    "Romans 5:19 — 'For as by one man's disobedience many were made sinners, so by the obedience of one shall many be made righteous.'",
+                    "1 Corinthians 1:30 — 'But of him are ye in Christ Jesus, who of God is made unto us wisdom, and righteousness, and sanctification, and redemption.'",
+                    "Philippians 3:9 — 'And be found in him, not having mine own righteousness, which is of the law, but that which is through the faith of Christ...'"
+                ],
+                reality: "Righteousness means being in right standing with God. Not perfect behavior. Not sinless performance. Right standing. You have it. God accepts you. Not because you're good enough, but because Christ's righteousness is yours. This acceptance is not conditional on your next choice.\n\nGod doesn't look at you and see your failures, your past, your shame. He looks at you and sees the righteousness of Christ. That is what He accepts. He accepts you based on what Christ did, not on what you do.",
+                important: "This is where boldness is born. A young woman who truly believes she's righteous—not someday, but now—will not approach God or people from shame. She'll approach from rest. She won't be striving to prove herself or trying to stay on God's good side. She'll be confident in who she already is.\n\nThe enemy works hard to make you doubt this. He'll whisper: 'You're not righteous—look at what you did,' or 'You were righteous but you blew it.' But righteousness is not a grade you earn or lose. It's a gift you've been given, based on Christ, and Christ doesn't change."
+            },
+            7: {
+                section: "Section 1: Sin Dealt With",
+                title: "You can say no to sin",
+                recommended: "Romans",
+                mainScripture: "Romans 6:6–7 — 'Knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin. For he that is dead is freed from sin.'",
+                supportingScriptures: [
+                    "Romans 6:11 — 'Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus Christ our Lord.'",
+                    "Galatians 2:20 — 'I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me.'",
+                    "Colossians 2:14–15 — 'Blotting out the handwriting of ordinances that was against us... And having spoiled principalities and powers, he made a shew of them openly, triumphing over them in it.'",
+                    "James 1:14–15 — 'But every man is tempted, when he is drawn away of his own lust, and enticed. Then when lust hath conceived, it bringeth forth sin...'"
+                ],
+                reality: "Sin is a power, not just an action. It will attempt to exert dominion over you. But it has no rightful power over you anymore. You were freed.\n\nYou don't have to obey. You can say no. You won't die—urges come and fade; you'll survive. But the consequences of what you do with the urge outlive the urge itself. So the real question isn't 'Can I?' It's 'What happens next?'\n\nHere's what's crucial: When you sin, God doesn't withdraw His love or change His stance toward you. But you separate yourself from His presence through darkness (unforgiveness, hardness, refusing to come into the light). God stands ready to restore that connection the moment you're willing to confess and come back to the light.",
+                important: "Young women often think: 'I'll always struggle with this sin. It's just who I am.' But you were someone else. That person was crucified. You're new. The old patterns may knock on the door (conditioned responses, habit pathways), but they don't have legal claim on you.\n\nThis doesn't mean sin becomes easy to resist. It means sin doesn't have authority over you. There's a difference. Authority comes from a lie you believe. Once you know the truth, authority breaks.\n\nSatan told you: 'You're enslaved to this.' Christ showed you: 'You're freed.' And here's the other part: when you do sin, Satan tells you, 'God is disappointed; you're disqualified now.' That's also a lie. God's door is open. He's not the one who left. You were."
+            },
+            8: {
+                section: "Section 1: Sin Dealt With",
+                title: "You are dead to sin",
+                recommended: "Romans",
+                mainScripture: "Romans 6:9–11 — 'Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him. For in that he died, he died unto sin once: but in that he liveth, he liveth unto God. Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus Christ our Lord.'",
+                supportingScriptures: [
+                    "Colossians 3:3 — 'For ye are dead, and your life is hid with Christ in God.'",
+                    "Romans 6:2 — 'God forbid. How shall we, that are dead to sin, live any longer therein?'",
+                    "Galatians 6:14 — 'But God forbid that I should glory, save in the cross of our Lord Jesus Christ, by whom the world is crucified unto me, and I unto the world.'",
+                    "2 Timothy 2:11 — 'It is a faithful saying: For if we be dead with him, we shall also live with him.'"
+                ],
+                reality: "You are dead to sin's lifestyle. Not because you're strong. Because you're dead. Dead things don't rise up to serve masters. They rest. And you rest from the effort of trying to be good—Christ is your goodness.\n\nThis is not morbid. This is freedom. A dead thing has no obligations, no performances, no need to prove itself. Neither do you. When temptation comes offering you slavery, you know that's a lie—you're already free from that dominion.\n\nWhen sin calls ('Remember how good that felt?'), the answer is: 'That person is dead. I don't live there anymore. That power doesn't claim me.'",
+                important: "This is where the theology becomes personal. It's not 'I'm working on being dead to sin.' You are dead to it. The co-crucifixion happened. Your job is to believe it and live accordingly—to 'reckon' it as true.\n\nMany believers are trying to kill something that's already dead. That's exhausting. Recognize the death. Rest in it. Strength comes from knowing you've already been freed, not from trying harder to be free.\n\nAnd here's the freedom in this: because you're dead to sin, when you mess up and sin, that sin doesn't prove you're enslaved. It's just a stumble from someone who's been freed. The solution isn't to become free (you already are). It's to come back to the light."
+            },
+            9: {
+                section: "Section 1: Sin Dealt With",
+                title: "You are a new creation—new identity, new person",
+                recommended: "Romans",
+                mainScripture: "2 Corinthians 5:17 — 'Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.'",
+                supportingScriptures: [
+                    "Ephesians 4:22–24 — 'That ye put off concerning the former conversation the old man, which is corrupt according to the deceitful lusts; And be renewed in the spirit of your mind; And that ye put on the new man, which after God is created in righteousness and true holiness.'",
+                    "Colossians 3:9–10 — 'Lie not one to another, seeing that ye have put off the old man with his deeds; And have put on the new man, which is renewed in knowledge after the image of him that created him.'",
+                    "John 1:12–13 — 'But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name: Which were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God.'",
+                    "1 Peter 1:23 — 'Being born again, not of corruptible seed, but of incorruptible, by the word of God, which liveth and abideth for ever.'"
+                ],
+                reality: "Your old identity is finished. The person who was bound by shame, driven by sin, ruled by fear—that person does not exist anymore. She died and rose new.\n\nThis doesn't mean your memories disappear or your history rewrites. It means your identity changes. You are no longer 'that girl who did those things.' You are a daughter of God, born of His nature, bearing His image. This identity is not shaken or changed by your sins. When you sin, you haven't reverted to who you were. You are still new; you're just walking in darkness instead of light.\n\nWhen the enemy whispers your old story ('Remember what you were? You're still that.'), the answer is: 'That was her. I'm new. And even when I stumble, I'm still new—I just need to come back to the light.'",
+                important: "This is the hardest thing to believe for women with heavy pasts. The mind says, 'But I remember what I did. I can't just be new.' But being new doesn't erase memory—it reframes identity. You can remember something and not be it anymore. An old building can remember being a warehouse and be a beautiful home now. It's not lying about its history. It's living in its new purpose.\n\nYoung women often carry the weight of 'once a sinner, always a sinner.' That's not biblical. You were a sinner. Now you're a saint. Literally. See yourself as God sees you: holy, blameless, His beloved—even when you stumble. Stumbling doesn't change your nature. It just means you need to confess and come back into the light with your Father."
+            },
+            10: {
+                section: "Section 1: Sin Dealt With",
+                title: "You are holy—set apart for God",
+                recommended: "Romans",
+                mainScripture: "1 Peter 1:15–16 — 'But as he which hath called you is holy, even so be ye holy in all manner of conversation; Because it is written, Be ye holy; for I am holy.'",
+                supportingScriptures: [
+                    "Hebrews 10:10 — 'By the which will we are sanctified through the offering of the body of Jesus Christ once for all.'",
+                    "1 Corinthians 6:19–20 — 'What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own? For ye are bought with a price: therefore glorify God in your body.'",
+                    "Ephesians 1:3–4 — 'Blessed be the God and Father of our Lord Jesus Christ... According as he hath chosen us in him before the foundation of the world, that we should be holy and without blame before him in love.'",
+                    "Titus 2:14 — 'Who gave himself for us, that he might redeem us from all iniquity, and purify unto himself a peculiar people, zealous of good works.'"
+                ],
+                reality: "Holiness doesn't mean perfection. It means set apart. You are reserved for God. Your sexuality, your time, your energy, your loyalty—these are not neutral. They belong to the holy. You belong to the holy.\n\nThis is your identity, not your aspiration. You don't have to earn holiness. You have it. What you do is live from it. Make choices that honor the fact that you're set apart for God. Everything you do with your body, your time, your relationships either honors or dishonors the holiness you already are.\n\nAnd here's the key: when you step away from holiness into darkness and sin, you separate yourself from God's presence—not because He abandoned you, but because you stepped out of the light. Like moving out of the sun into shadow. God didn't move. You did. And you can turn around and walk back into the light anytime.",
+                important: "This is where Section 1 lands: You understand what Christ finished (Days 1–3). You understand the great exchange (Day 4). You understand your legal standing (Days 5–6). You understand your authority over sin (Day 7). You understand you're dead to your old way (Day 8). You understand you're someone new (Day 9). And now you understand: you belong to God. You are His. Holy.\n\nThis is not shame-based motivation ('I have to be good because God's watching'). This is identity-based freedom ('I am good because I belong to Good').\n\nThe consciousness builds: From forgiven → graced → clean → exchanged → justified → righteous → liberated → reborn → holy. Not works. Not striving. Just the settling in of who she actually is. And the understanding that when you stumble, God doesn't move. You can come back."
+            },
+            11: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "Peace is not a feeling; it is the absence of hostility",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Romans 5:1 — 'Therefore being justified by faith, we have peace with God through our Lord Jesus Christ.'",
+                supportingScriptures: [
+                    "Luke 2:14 — 'Glory to God in the highest, and on earth peace, good will toward men.'",
+                    "Isaiah 53:5 — 'The chastisement for our peace was upon him.'",
+                    "Ephesians 2:14–16 — 'He himself is our peace... having abolished in his flesh the enmity.'",
+                    "Colossians 1:20 — 'And, having made peace through the blood of his cross... to reconcile all things unto himself.'"
+                ],
+                reality: "Peace is not a feeling. It is not the absence of conflict around you. It is the absence of hostility between you and God. You are no longer at odds with Him. The enmity is gone. This is not something you earn or maintain through good behavior. This is your position in Christ.\n\nGod is not your enemy. God is not secretly mad at you. God is not hostile toward you. That ended at the cross.",
+                important: "The world thinks peace is calm circumstances, no conflict, everything going smoothly. That's not what Scripture means by peace. Scripture means: you and God are no longer enemies. The relationship is restored. He is for you, not against you.\n\nMany young women live as though they're in a cold war with God—trying to be good enough to win His favor, waiting for Him to finally be pleased with them. But peace says: The war is over. You won. Not because you were strong, but because Christ won. You have peace. Present tense. Right now."
+            },
+            12: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "You are adopted—chosen, beloved, Father",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Ephesians 1:4–5 — 'According as he hath chosen us in him before the foundation of the world, that we should be holy and without blame before him in love: Having predestinated us unto the adoption of children by Jesus Christ to himself, according to the good pleasure of his will.'",
+                supportingScriptures: [
+                    "Romans 8:15 — 'For ye have not received the spirit of bondage again to fear; but ye have received the Spirit of adoption, whereby we cry, Abba, Father.'",
+                    "1 John 3:1 — 'Behold, what manner of love the Father hath bestowed upon us, that we should be called the sons of God.'",
+                    "Galatians 4:6–7 — 'And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father. Wherefore thou art no more a servant, but a son; and if a son, then an heir of God through Christ.'",
+                    "Jeremiah 31:3 — 'The Lord hath appeared of old unto me, saying, Yea, I have loved thee with an everlasting love: therefore with lovingkindness have I drawn thee.'"
+                ],
+                reality: "You are not God's reluctant servant. You are not trying to please a distant, disapproving judge. You are His child. He chose you. He actually likes you. This is not metaphorical. This is your actual relationship.\n\nGod is your Father in the truest sense of the word. The best father you can imagine—patient, protective, generous, proud of you, wanting the best for you—that is a shadow of who He is. He is even better. He didn't adopt you because you deserved it or earned it. He adopted you because He wanted you. You were wanted before the world began.",
+                important: "Many young women have broken relationships with their earthly fathers. Absent fathers, cold fathers, critical fathers, abusive fathers. The gospel invites you into a different story: You have a Father who is present, warm, generous, and proud of you. He is not waiting for you to be perfect. He is not secretly ashamed of you. He chose you.\n\nThis changes everything about how you approach God. You are not trying to earn love. You are living from love. You are not a servant working for approval. You are a daughter secure in your Father's affection."
+            },
+            13: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "You have direct access to God",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Ephesians 2:18 — 'For through him we both have access by one Spirit unto the Father.'",
+                supportingScriptures: [
+                    "Hebrews 4:16 — 'Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.'",
+                    "Hebrews 10:19–22 — 'Having therefore, brethren, boldness to enter into the holiest by the blood of Jesus... Let us draw near with a true heart.'",
+                    "Romans 5:2 — 'By whom also we have access by faith into this grace wherein we stand.'",
+                    "1 Peter 3:18 — 'For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God.'"
+                ],
+                reality: "You do not need a priest. You do not need a pastor to access God. You do not need to be 'spiritual enough' or 'good enough' or 'have your act together enough.' You have direct access. Right now. To the Father. To the throne. To grace.\n\nThis access is not blocked by your sin (Days 1-10 established that). It's not blocked by your weakness. It's not blocked by your past. You can come directly. Boldly.",
+                important: "In many African churches and faith traditions, access to God is mediated—you need a pastor to pray for you, a prophet to hear from God, an elder to intercede. That's not biblical. That's control. You are a royal priesthood (1 Peter 2:9). You have direct access.\n\nThis is empowering: You don't have to wait for someone to be 'available.' You don't have to hope someone important will pray for you. You can go directly to the throne. Right now. And God will hear you."
+            },
+            14: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "Your prayers are not low-grade; you have first-class treatment",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Philippians 4:6–7 — 'Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and your minds through Christ Jesus.'",
+                supportingScriptures: [
+                    "1 John 5:14–15 — 'And this is the confidence that we have in him, that, if we ask any thing according to his will, he heareth us: And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.'",
+                    "Matthew 7:7–8 — 'Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: For every one that asketh receiveth.'",
+                    "James 4:2–3 — 'Ye have not, because ye ask not... Ye ask, and receive not, because ye ask amiss.'",
+                    "Proverbs 15:8 — 'The sacrifice of the wicked is an abomination to the Lord: but the prayer of the upright is his delight.'"
+                ],
+                reality: "Your prayers are not low-grade. You are not a second-class citizen in God's kingdom. You do not have to hope some 'super Christian' prays for you to get God's attention. When you pray, God listens. Your requests matter. You have first-class treatment.\n\nYou are not waiting in line behind pastors, prophets, or 'more spiritual' people. You have direct access. Your prayers go straight to the throne. And God delights in them.",
+                important: "Many young women were taught: 'Pray, but the pastor's prayers are stronger,' or 'You have to be more mature in faith for God to listen,' or 'Only prophets really hear from God.' These are lies designed to keep you small.\n\nYour prayers matter. God hears you. When you ask, according to His will, you receive. Not 'maybe.' Not 'if you're worthy.' You ask, you receive. This is your birthright as God's child."
+            },
+            15: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "You are an insider; God does His work through you",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "2 Corinthians 5:20 — 'Now then we are ambassadors for Christ, as though God did beseech you by us: we pray you in Christ's stead, be ye reconciled to God.'",
+                supportingScriptures: [
+                    "1 Corinthians 12:12–13 — 'For as the body is one, and hath many members... so also is Christ... For by one Spirit are we all baptized into one body.'",
+                    "Ephesians 4:11–12 — 'And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers... for the edifying of the body of Christ.'",
+                    "John 14:12 — 'Verily, verily, I say unto you, He that believeth on me, the works that I do shall he do also; and greater works than these shall he do.'",
+                    "2 Corinthians 6:1 — 'We then, as workers together with him, beseech you also that ye receive not the grace of God in vain.'"
+                ],
+                reality: "You are not a spectator in God's kingdom. You are not waiting for 'real' Christians or leaders to do the work. God does His healing through you. His deliverance through you. His mercy through you. His answers to other people's prayers—through you.\n\nYou are a trusted insider in heaven. God trusts you with His work. He sends you as His ambassador. When people meet you and experience love, mercy, healing, deliverance—they're meeting God.",
+                important: "Many young women think: 'I'm just a young woman. The real work is done by pastors and prophets.' But Scripture says the work is done through the body—through all believers. You are not marginal. You are central.\n\nGod doesn't need permission to use you. He doesn't need you to be 'spiritual enough.' He uses you as you are. Your compassion, your words, your presence—these are tools God uses to touch people.\n\nThis is humbling and empowering: God chooses to work through you. Not because you're special in yourself, but because you're His, and He delights to do His work through His people."
+            },
+            16: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "He sees you as up there with Him, not as weak",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Psalm 8:5 — 'For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.'",
+                supportingScriptures: [
+                    "Ephesians 2:6 — 'And hath raised us up together, and made us sit together in heavenly places in Christ Jesus.'",
+                    "1 John 4:17 — 'As he is, so are we in this world.'",
+                    "Romans 8:37 — 'Nay, in all these things we are more than conquerors through him that loved us.'",
+                    "1 Peter 2:9 — 'But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people.'"
+                ],
+                reality: "God does not see you as weak, incompetent, or unworthy. He sees you as crowned with glory and honor. He sees you as seated in heavenly places. He sees you as royal.\n\nThe proof? Look at the people He sent to do His work: Moses (stammered), Gideon (hiding in fear), Peter (just abandoned Jesus), Paul (persecuted Christians). He didn't say, 'Wait until they're perfect.' He said, 'Go.' Because He sees something in you that you haven't seen in yourself yet.",
+                important: "When you hear God's voice calling you to do something—speak, lead, serve, step out—your first response is usually, 'But I'm not [strong enough / smart enough / experienced enough / spiritual enough].' But that's insecurity, not humility. God sees you differently than you see yourself. He sees you as capable. As ready. As up there with Him."
+            },
+            17: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "You have boldness—to speak and act for Him, and to speak to Him",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Ephesians 3:12 — 'In whom we have boldness and access with confidence by the faith of him.'",
+                supportingScriptures: [
+                    "1 John 4:17 — 'Herein is our love made perfect, that we may have boldness in the day of judgment: because as he is, so are we in this world.'",
+                    "Acts 4:29–31 — 'And now, Lord, behold their threatenings: and grant unto thy servants, that with all boldness they may speak thy word...'",
+                    "2 Timothy 1:7 — 'For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.'",
+                    "Proverbs 28:1 — 'The wicked flee when no one pursueth them: but the righteous are bold as a lion.'"
+                ],
+                reality: "You have boldness. Not arrogance. Not recklessness. Boldness—the confident assurance that you belong to God and He is with you.\n\nThis boldness means: To speak for Him—you can speak truth, share your faith, speak it boldly. To act for Him—you can step out in faith, believing God is with you. To speak to Him—you can pray boldly, asking for what you need without fear.",
+                important: "Many young women were taught to be quiet, compliant, small. 'Know your place,' they were told. But your place is with God. Seated with Christ in heavenly places. And from that place, you speak boldly.\n\nThis boldness is not about being loud or aggressive. It's about being unafraid. Unashamed. Secure in whose you are."
+            },
+            18: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "Reconciliation: He calls you back; confession removes your barrier",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "1 John 1:7–9 — 'But if we walk in the light, as he is in the light, we have fellowship one with another, and the blood of Jesus Christ his Son cleanseth us from all sin... If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.'",
+                supportingScriptures: [
+                    "Isaiah 59:1–2 — 'Behold, the Lord's hand is not shortened, that it cannot save; neither his ear heavy, that it cannot hear: But your iniquities have separated between you and your God...'",
+                    "Hosea 6:1 — 'Come, and let us return unto the Lord: for he hath torn, and he will heal us; he hath smitten, and he will bind us up.'",
+                    "Luke 15:20–21 — 'And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him.'",
+                    "Jeremiah 3:12 — 'Go and proclaim these words toward the north, and say, Return, thou backsliding Israel... and I will not cause mine anger to fall upon you.'"
+                ],
+                reality: "When you sin and separate yourself through darkness (unforgiveness, hardness, hiding), God doesn't go anywhere. He calls you to come back. Like the father in Luke 15, He's watching for your return.\n\nThe moment you confess—the moment you tell the truth about what you did—the barrier you created is removed. Completely. Immediately. Restoration is not 'eventually.' It's now. God is not punishing you or making you grovel. He's welcoming you home.",
+                important: "Many young women carry deep shame about sin and think: 'I've gone too far. God won't take me back. I have to punish myself or prove I'm sorry.' But that's not how reconciliation works with God.\n\nHe says: 'Come. Tell me the truth. Let the light in. And I will cleanse you.' Restoration is immediate. No waiting period. No probation. You confess, you're clean. This is the opposite of how the world works. The world says, 'You messed up. Now you have to earn your way back.' God says, 'You messed up. Come home. Now.'"
+            },
+            19: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "God's punishment fell on Christ; consequences are real but not punitive",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Isaiah 53:5 — 'But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.'",
+                supportingScriptures: [
+                    "Romans 8:1 — 'There is therefore now no condemnation to them which are in Christ Jesus.'",
+                    "2 Corinthians 5:21 — 'For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.'",
+                    "Hebrews 9:27–28 — 'And as it is appointed unto men once to die, but after this the judgment: So Christ was once offered to bear the sins of many.'",
+                    "Galatians 3:13 — 'Christ hath redeemed us from the curse of the law, being made a curse for us.'"
+                ],
+                reality: "This is crucial: God's punishment did not come to you. It came to Christ. You will never experience God's wrath, His judgment, His punitive action. That's not your lot.\n\nBut natural consequences are real and important. When you commit fornication → a child may be born. When you steal → you may be arrested. When you abuse substances → your health deteriorates. When you gossip → relationships break. These consequences flow naturally from choices. They are not God ambushing you. They're how the world works. And wisdom means: understand that your choices matter and shape your reality.",
+                important: "This distinction matters enormously in African contexts where Christians often think, 'If bad things happen, God is punishing me for sin.' But God's punishment fell on Christ. What you experience are natural consequences + God's grace helping you through.\n\nDon't be confused: understanding that consequences are real doesn't mean you're being punished. It means your choices have weight. That's empowering. That's wisdom. It means your life is in your hands (with God's help), not at the whim of a punishing God. The goal is not to avoid consequences (some are unavoidable). The goal is to make wise choices so you don't create unnecessary suffering for yourself."
+            },
+            20: {
+                section: "Section 2: Peace & Reconciliation with God",
+                title: "Grace super abounds; God turns your mistakes into wins",
+                recommended: "Brennan Manning - The Ragamuffin Gospel",
+                mainScripture: "Romans 5:20 — 'Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound.'",
+                supportingScriptures: [
+                    "Romans 8:28 — 'And we know that all things work together for good to them that love God, to them who are the called according to his purpose.'",
+                    "Genesis 50:20 — 'But as for you, ye thought evil against me; but God meant it unto good.'",
+                    "Joel 2:25 — 'And I will restore to you the years that the locust hath eaten, the cankerworm, and the caterpillar, and the palmerworm, my great army which I sent among you.'",
+                    "2 Corinthians 12:9 — 'And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness.'"
+                ],
+                reality: "You will make mistakes. You will fail. You will stumble. And in those moments, grace doesn't just cover you—it super-abounds. It's excessive. Generous. Lavish.\n\nMore than that: God takes your mistakes and turns them into wins. Your failures become wisdom. Your stumbles become compassion (you understand what others go through). Your regrets become maturity. This is not permission to sin carelessly. This is the reality of living under grace: God is for you. Even when you mess up. Especially when you mess up. He's right there, turning it into something good.",
+                important: "This is where Section 2 lands: You are at peace with God. You are His beloved child. You have direct access and first-class treatment. You are an insider doing God's work. He sees you as capable and crowns you with honor. You speak boldly to Him and for Him. When you separate yourself through sin, He calls you back immediately. His punishment fell on Christ, not you. And through it all, grace super-abounds.\n\nYou are living under an economy of abundance, not scarcity. God is not rationing grace. He's not saying, 'Well, you've used up your forgiveness quota.' He's saying, 'Where you think you've failed most, grace abounds most.' This is the peace that passes understanding: You are completely, lavishly, abundantly loved—not because of what you do, but because of who you are in Christ."
+            }
+        };
+
+        const sections = {
+            1: "Section 1: Sin Dealt With",
+            2: "Section 2: Peace & Reconciliation with God"
+        };
+
+        const sectionColors = {
+            1: "has-content",
+            2: "has-content section-2"
+        };
+
+        // Calculate current day based on May 20, 2026 = Day 1
+        const startDate = new Date('2026-05-20');
+
+        function getTodayDay() {
+            const today = new Date();
+            const diffMs = today - startDate;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24)) + 1;
+            return Math.max(1, Math.min(diffDays, 100));
+        }
+
+        let currentDay = getTodayDay();
+
+        function getSection(day) {
+            if (day <= 10) return 1;
+            if (day <= 20) return 2;
+            // More sections would go here
+            return Math.ceil(day / 10);
+        }
+
+        function formatDate(day) {
+            const date = new Date(startDate);
+            date.setDate(date.getDate() + day - 1);
+            return date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+        }
+
+        function renderContent(day) {
+            const wrapper = document.getElementById('contentWrapper');
+            const data = contentData[day];
+
+            if (!data) {
+                wrapper.innerHTML = `
+                    <div class="empty-state">
+                        <p>Day ${day} content coming soon...</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const section = getSection(day);
+            const recSection = sections[section] || `Section ${section}`;
+            const recReading = data.recommended || '';
+
+            wrapper.innerHTML = `
+                <div class="section-label">${data.section}</div>
+                <h1 class="day-title">Day ${day}<br>${data.title}</h1>
+
+                ${recReading ? `
+                <div class="recommended">
+                    <div class="recommended-title">📖 Recommended Reading</div>
+                    <div class="recommended-text">${recReading}</div>
+                </div>
+                ` : ''}
+
+                <div class="scripture-section">
+                    <div class="section-heading">Main Scripture</div>
+                    <div class="scripture-text">
+                        ${data.mainScripture}
+                    </div>
+                </div>
+
+                ${data.supportingScriptures ? `
+                <div class="scripture-section">
+                    <div class="section-heading">Supporting Scriptures</div>
+                    <div class="supporting-scriptures">
+                        ${data.supportingScriptures.map(s => `
+                            <div class="supporting-scripture">
+                                ${s}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                ` : ''}
+
+                ${data.reality ? `
+                <div class="scripture-section">
+                    <div class="reality">
+                        <span class="reality-title">Reality to Master</span>
+                        ${data.reality.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+
+                ${data.important ? `
+                <div class="scripture-section">
+                    <div class="important">
+                        <span class="important-title">Important Notes</span>
+                        ${data.important.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            `;
+        }
+
+        function renderDayGrid() {
+            const grid = document.getElementById('dayGrid');
+            let html = '';
+
+            for (let i = 1; i <= 100; i++) {
+                const hasContent = contentData[i] !== undefined;
+                const isToday = i === currentDay;
+                const classList = [
+                    'day-box',
+                    isToday ? 'today' : '',
+                    hasContent ? sectionColors[getSection(i)] : 'no-content'
+                ].filter(Boolean).join(' ');
+
+                html += `
+                    <div class="${classList}" onclick="${hasContent || isToday ? `loadDay(${i})` : ''}">${i}</div>
+                `;
+            }
+
+            grid.innerHTML = html;
+        }
+
+        function loadDay(day) {
+            if (contentData[day] === undefined) return;
+            currentDay = day;
+            updateUI();
+        }
+
+        function nextDay() {
+            if (currentDay < 100) {
+                currentDay++;
+                updateUI();
+            }
+        }
+
+        function previousDay() {
+            if (currentDay > 1) {
+                currentDay--;
+                updateUI();
+            }
+        }
+
+        function goToToday() {
+            currentDay = getTodayDay();
+            updateUI();
+        }
+
+        function updateUI() {
+            const today = getTodayDay();
+            const isToday = currentDay === today;
+
+            // Update header
+            document.getElementById('dayCount').textContent = `Day ${currentDay}`;
+
+            // Update today banner
+            if (isToday) {
+                document.querySelector('.today-banner').style.display = 'flex';
+                document.getElementById('todayLabel').textContent = `Today`;
+                document.getElementById('todayDate').textContent = formatDate(currentDay);
+            } else {
+                document.querySelector('.today-banner').style.display = 'flex';
+                document.getElementById('todayLabel').textContent = formatDate(currentDay);
+                document.getElementById('todayDate').textContent = `Day ${currentDay}`;
+            }
+
+            // Update content
+            renderContent(currentDay);
+
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = currentDay === 1;
+            document.getElementById('nextBtn').disabled = currentDay === 100;
+
+            // Update day grid
+            renderDayGrid();
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize
+        updateUI();
+    </script>
+</body>
+</html>

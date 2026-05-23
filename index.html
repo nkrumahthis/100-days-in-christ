@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 In Christ - 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">100 In Christ</h1>
+                <p class="subtitle">Building consciousness of your identity in Christ</p>
+            </div>
+            <div class="header-controls">
+                <div class="day-display">
+                    <span class="day-number" id="dayNumber">1</span>
+                    <span class="day-label">of 100</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Section Header -->
+            <section class="section-header" id="sectionHeader">
+                <h2 id="sectionTitle"></h2>
+                <p id="sectionDescription"></p>
+            </section>
+
+            <!-- Day Content -->
+            <article class="day-content" id="dayContent">
+                <h3 id="dayTitle" class="day-title"></h3>
+
+                <div class="content-block">
+                    <h4>Main Scripture</h4>
+                    <div id="mainScripture" class="scripture-text"></div>
+                </div>
+
+                <div class="content-block">
+                    <h4>Supporting Scriptures</h4>
+                    <ul id="supportingScriptures" class="scripture-list"></ul>
+                </div>
+
+                <div class="content-block">
+                    <h4>The Reality to Master</h4>
+                    <div id="reality" class="reality-text"></div>
+                </div>
+
+                <div class="content-block">
+                    <h4>Important</h4>
+                    <div id="important" class="important-text"></div>
+                </div>
+
+                <div class="content-block" id="recommendedBlock">
+                    <h4>Recommended Reading</h4>
+                    <p id="recommended" class="recommended-text"></p>
+                </div>
+            </article>
+
+            <!-- Navigation -->
+            <nav class="navigation">
+                <button class="nav-button nav-prev" id="prevButton">← Previous</button>
+                <button class="nav-button nav-next" id="nextButton">Next →</button>
+            </nav>
+        </main>
+
+        <!-- Sidebar Menu -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Navigation</h2>
+                <button class="close-button" id="closeMenu" aria-label="Close menu">×</button>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Sections</h3>
+                <div class="sections-list" id="sectionsList"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Jump to Day</h3>
+                <input
+                    type="number"
+                    id="dayJump"
+                    class="day-jump-input"
+                    min="1"
+                    max="100"
+                    placeholder="Enter day number"
+                    aria-label="Jump to day number"
+                >
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Schedule</h3>
+                <p class="schedule-info">Start Date: <strong>May 20, 2026</strong></p>
+                <p class="schedule-info">Current Day: <strong id="scheduleCurrentDay">1</strong></p>
+                <button class="reset-button" id="resetButton">Reset to Today</button>
+            </div>
+        </aside>
+
+        <!-- Overlay for mobile menu -->
+        <div class="overlay" id="overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
