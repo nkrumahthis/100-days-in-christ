@@ -284,6 +284,15 @@ h1, h2, h3 {
     backdrop-filter: blur(10px);
 }
 
+.article-date {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
 .article-title {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;

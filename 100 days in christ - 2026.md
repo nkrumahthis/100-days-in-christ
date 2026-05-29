@@ -303,41 +303,51 @@ This doesn't mean sin becomes easy to resist. It means sin doesn't have *authori
 
 Satan told you: "You're enslaved to this." Christ showed you: "You're freed." And here's the other part: when you do sin, Satan tells you, "God is disappointed; you're disqualified now." That's also a lie. God's door is open. He's not the one who left. You were.
 
-### Day 8 - You are dead to sin
+### Day 8 - You are free from the fear of death
 
-**Main Scripture: Romans 6:9–11**
+**Main Scripture: Romans 6:9**
 
-"Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him. For in that he died, he died unto sin once: but in that he liveth, he liveth unto God. Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus Christ our Lord."
+"Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him."
 
-You are dead to sin. Not trying to be. Not working toward it. *Are.* Present tense. This is your condition in Christ.
+You are free from the fear of death. Death no longer has dominion. You already died — in Christ. We are dead. So we do not have the same limits that those who are not dead live under.
 
 **Supporting Scriptures:**
 
-Colossians 3:3 — "For ye are dead, and your life is hid with Christ in God." You died. Your life is now hidden with Christ. Sin has no claim on someone who's dead to it.
+Hebrews 9:27 — "It is appointed unto men once to die, but after this the judgment." Once. The appointment has been kept. You died in Christ. The death that was coming for you—you already went through it. The debt is paid. The sentence is served. The appointment is closed.
 
-Romans 6:2 — "God forbid. How shall we, that are dead to sin, live any longer therein?" The rhetorical answer: we can't. It's incompatible. Dead things don't respond to the living.
+Romans 8:1 — "There is therefore now no condemnation for those who are in Christ Jesus." After death, judgment. We have died and have been judged. The verdict came back: acquitted.
 
-Galatians 6:14 — "But God forbid that I should glory, save in the cross of our Lord Jesus Christ, by whom the world is crucified unto me, and I unto the world." The world system—its values, its pulls, its "you must have/do/be this"—is crucified to you. Dead.
+Romans 8:33 — "Who shall bring a charge against God's elect? It is God who justifies." The enemy cannot bring a charge that sticks. Dead. Judged. Acquitted. That is your legal standing before the entire spiritual order.
 
-2 Timothy 2:11 — "It is a faithful saying: For if we be dead with him, we shall also live with him." Death with Christ leads to life with Christ. You don't stay dead—you rise.
-
-Romans 3:8–10 — "Now if we be dead with Christ, we believe that we shall also live with him... Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God." Reckon means to count it as true. Make this your accounting.
+2 Corinthians 5:10 — "We must all appear before the judgment seat of Christ, that each one may receive what is due for things done in the body." A future appearance remains—not for condemnation, but for account. Paul includes himself. This is the bema.
 
 **Reality to Master:**
 
-You are dead to sin's lifestyle. Not because you're strong. Because you're dead. Dead things don't rise up to serve masters. They rest. And you rest from the effort of trying to be good—Christ is your goodness.
+We are not afraid of satan because the worst he can do is already done to us. You cannot threaten someone who has already been killed. You cannot negotiate with a woman who needs nothing you can offer.
 
-This is not morbid. This is freedom. A dead thing has no obligations, no performances, no need to prove itself. Neither do you. When temptation comes offering you slavery, you know that's a lie—you're already free from that dominion.
+We are not afraid of death because we are certain we are not at risk of damnation. We are actually excited to see God because we have already passed through judgment. Condemnation is finished in Christ.
 
-When sin calls ("Remember how good that felt?"), the answer is: "That person is dead. I don't live there anymore. That power doesn't claim me."
+When fear comes whispering ("What if you die? What if you're judged? What if you're not enough?"), the answer is: "I have already died. I have already been judged. I have already been acquitted. There is nothing left to fear."
 
 **Important Notes:**
 
-This is where the theology becomes personal. It's not "I'm working on being dead to sin." You *are* dead to it. The co-crucifixion happened. Your job is to believe it and live accordingly—to "reckon" it as true.
+The structure is two-fold: **Condemnation**—already judged, already acquitted, finished in Christ. **Stewardship**—still to be rendered, motivating faithful living now.
 
-Many believers are trying to kill something that's already dead. That's exhausting. Recognize the death. Rest in it. Strength comes from knowing you've already been freed, not from trying harder to be free.
+The bema seat (2 Corinthians 5:10) is not a courtroom. The Greek word *bema* is the raised platform at the end of a Greek athletic competition where the judge stood to distribute prizes to the winners. Paul's audience understood this immediately. It is not a criminal tribunal. It is an awards ceremony.
 
-And here's the freedom in this: because you're dead to sin, when you mess up and sin, that sin doesn't prove you're enslaved. It's just a stumble from someone who's been freed. The solution isn't to become free (you already are). It's to come back to the light.
+1 Corinthians 3:12–15 maps this out: work tested by fire. Some survives—gold, silver, precious stones. Some burns—wood, hay, stubble. But the verdict on the one whose work burns: "he himself will be saved, but only as through fire." Even the one with nothing to show is still saved. The question at the bema is never *are you in*—that is settled. The question is *what did you build while you were there*.
+
+The crowns are not metaphors for vague spiritual feelings. They are specific rewards for specific kinds of faithfulness:
+
+- The **incorruptible crown** — for disciplined living (1 Corinthians 9:25)
+- The **crown of righteousness** — for those who love His appearing (2 Timothy 4:8)
+- The **crown of life** — for enduring trial and temptation (James 1:12, Revelation 2:10)
+- The **crown of rejoicing** — for souls won (1 Thessalonians 2:19)
+- The **crown of glory** — for faithful shepherding (1 Peter 5:4)
+
+So picture the arc: You came to earth. You lived in a body. You died in Christ—death and judgment already settled, condemnation gone. You arrive at the marriage feast of the Lamb—the great celebration Scripture has been building toward since Genesis. As part of that celebration your earthly work is reviewed and rewarded. Not to shame you. Not to punish you. To honour what was done in faithfulness.
+
+You are not only unkillable—you are already cleared. Walk in that.
 
 ### Day 9 - You are a new creation—new identity, new person
 

@@ -12,7 +12,10 @@
       "description": "What Christ has finished for you",
       "bgColor": "#dbeafe",
       "textColor": "#0d47a1",
-      "dayRange": [1, 10]
+      "dayRange": [
+        1,
+        10
+      ]
     },
     {
       "id": 2,
@@ -20,12 +23,16 @@
       "description": "Who you are and how you relate to God",
       "bgColor": "#ccfbf1",
       "textColor": "#0d7377",
-      "dayRange": [11, 20]
+      "dayRange": [
+        11,
+        20
+      ]
     }
   ],
   "days": {
     "1": {
       "section": 1,
+      "date": "2026-05-21",
       "title": "You are forgiven",
       "recommended": "Romans",
       "mainScripture": "Colossians 1:14 — 'In whom we have redemption through his blood, the forgiveness of sins…'",
@@ -40,6 +47,7 @@
     },
     "2": {
       "section": 1,
+      "date": "2026-05-22",
       "title": "Grace for the weak",
       "recommended": "Romans",
       "mainScripture": "Romans 5:20 — 'Moreover the law entered that the offence might abound. But where sin abounded, grace did much more abound.'",
@@ -54,6 +62,7 @@
     },
     "3": {
       "section": 1,
+      "date": "2026-05-23",
       "title": "You have no record of sins",
       "recommended": "Romans",
       "mainScripture": "Hebrews 10:17 — 'Their sins and iniquities will I remember no more.'",
@@ -68,6 +77,7 @@
     },
     "4": {
       "section": 1,
+      "date": "2026-05-24",
       "title": "The divine exchange",
       "recommended": "Romans",
       "mainScripture": "2 Corinthians 5:21 — 'For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.'",
@@ -82,6 +92,7 @@
     },
     "5": {
       "section": 1,
+      "date": "2026-05-25",
       "title": "You are justified",
       "recommended": "Romans",
       "mainScripture": "Romans 5:18–19 — 'Therefore as by the offence of one judgment came upon all men to condemnation; even so by the righteousness of one the free gift came upon all men unto justification of life...'",
@@ -96,6 +107,7 @@
     },
     "6": {
       "section": 1,
+      "date": "2026-05-26",
       "title": "You are righteous",
       "recommended": "Romans",
       "mainScripture": "2 Corinthians 5:21 — 'For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.'",
@@ -110,6 +122,7 @@
     },
     "7": {
       "section": 1,
+      "date": "2026-05-27",
       "title": "You can say no to sin",
       "recommended": "Romans",
       "mainScripture": "Romans 6:6–7 — 'Knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin. For he that is dead is freed from sin.'",
@@ -124,20 +137,22 @@
     },
     "8": {
       "section": 1,
-      "title": "You are dead to sin",
+      "date": "2026-05-28",
+      "title": "You are free from the fear of death",
       "recommended": "Romans",
-      "mainScripture": "Romans 6:9–11 — 'Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him. For in that he died, he died unto sin once: but in that he liveth, he liveth unto God. Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus Christ our Lord.'",
+      "mainScripture": "Romans 6:9 — 'Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him.'",
       "supportingScriptures": [
-        "Colossians 3:3 — 'For ye are dead, and your life is hid with Christ in God.'",
-        "Romans 6:2 — 'God forbid. How shall we, that are dead to sin, live any longer therein?'",
-        "Galatians 6:14 — 'But God forbid that I should glory, save in the cross of our Lord Jesus Christ, by whom the world is crucified unto me, and I unto the world.'",
-        "2 Timothy 2:11 — 'It is a faithful saying: For if we be dead with him, we shall also live with him.'"
+        "Hebrews 9:27 — 'It is appointed unto men once to die, but after this the judgment.'",
+        "Romans 8:1 — 'There is therefore now no condemnation for those who are in Christ Jesus.'",
+        "Romans 8:33 — 'Who shall bring a charge against God's elect? It is God who justifies.'",
+        "2 Corinthians 5:10 — 'We must all appear before the judgment seat of Christ, that each one may receive what is due for things done in the body.'"
       ],
-      "reality": "You are dead to sin's lifestyle. Not because you're strong. Because you're dead. Dead things don't rise up to serve masters. They rest. And you rest from the effort of trying to be good—Christ is your goodness.\n\nThis is not morbid. This is freedom. A dead thing has no obligations, no performances, no need to prove itself. Neither do you. When temptation comes offering you slavery, you know that's a lie—you're already free from that dominion.\n\nWhen sin calls ('Remember how good that felt?'), the answer is: 'That person is dead. I don't live there anymore. That power doesn't claim me.'",
-      "important": "This is where the theology becomes personal. It's not 'I'm working on being dead to sin.' You are dead to it. The co-crucifixion happened. Your job is to believe it and live accordingly—to 'reckon' it as true.\n\nMany believers are trying to kill something that's already dead. That's exhausting. Recognize the death. Rest in it. Strength comes from knowing you've already been freed, not from trying harder to be free.\n\nAnd here's the freedom in this: because you're dead to sin, when you mess up and sin, that sin doesn't prove you're enslaved. It's just a stumble from someone who's been freed. The solution isn't to become free (you already are). It's to come back to the light."
+      "reality": "You are free from the fear of death. Death no longer has dominion. You already died—in Christ. We are dead. So we do not have the same limits that those who are not dead live under.\n\nHebrews 9:27 says it is appointed for men to die once. Once. The appointment has been kept. You died in Christ. The death that was coming for you—you already went through it. The debt is paid. The sentence is served. The appointment is closed.\n\nWe are not afraid of satan because the worst he can do is already done to us. You cannot threaten someone who has already been killed. You cannot negotiate with a woman who needs nothing you can offer.\n\nWe are not afraid of death because we are certain we are not at risk of damnation. We are actually excited to see God because we have already passed through judgment. After death, judgment—and we have died and have been judged. Romans 8:1 confirms it: no condemnation. The verdict came back: acquitted.\n\nWhen fear comes whispering ('What if you die? What if you're judged? What if you're not enough?'), the answer is: 'I have already died. I have already been judged. I have already been acquitted. There is nothing left to fear.'",
+      "important": "The structure is two-fold: Condemnation—already judged, already acquitted, finished in Christ. Stewardship—still to be rendered, motivating faithful living now.\n\nThe bema seat (2 Corinthians 5:10) is not a courtroom. The Greek word bema is the raised platform at the end of a Greek athletic competition where the judge stood to distribute prizes to the winners. Paul's audience understood this immediately. It is not a criminal tribunal. It is an awards ceremony.\n\n1 Corinthians 3:12–15 maps this out: work tested by fire. Some survives—gold, silver, precious stones. Some burns—wood, hay, stubble. But the verdict on the one whose work burns: 'he himself will be saved, but only as through fire.' Even the one with nothing to show is still saved. The question at the bema is never are you in—that is settled. The question is what did you build while you were there.\n\nThe crowns are not metaphors for vague spiritual feelings. They are specific rewards for specific kinds of faithfulness: the incorruptible crown for disciplined living (1 Corinthians 9:25); the crown of righteousness for those who love His appearing (2 Timothy 4:8); the crown of life for enduring trial and temptation (James 1:12, Revelation 2:10); the crown of rejoicing for souls won (1 Thessalonians 2:19); the crown of glory for faithful shepherding (1 Peter 5:4).\n\nPicture the arc: You came to earth. You lived in a body. You died in Christ—death and judgment already settled, condemnation gone. You arrive at the marriage feast of the Lamb—the great celebration Scripture has been building toward since Genesis. As part of that celebration your earthly work is reviewed and rewarded. Not to shame you. Not to punish you. To honour what was done in faithfulness.\n\nDead. Judged. Acquitted. That is your legal standing before the entire spiritual order. You are not only unkillable—you are already cleared. Walk in that."
     },
     "9": {
       "section": 1,
+      "date": "2026-05-29",
       "title": "You are a new creation—new identity, new person",
       "recommended": "Romans",
       "mainScripture": "2 Corinthians 5:17 — 'Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.'",
@@ -152,6 +167,7 @@
     },
     "10": {
       "section": 1,
+      "date": "2026-05-30",
       "title": "You are holy—set apart for God",
       "recommended": "Romans",
       "mainScripture": "1 Peter 1:15–16 — 'But as he which hath called you is holy, even so be ye holy in all manner of conversation; Because it is written, Be ye holy; for I am holy.'",
@@ -166,6 +182,7 @@
     },
     "11": {
       "section": 2,
+      "date": "2026-05-31",
       "title": "Peace is not a feeling; it is the absence of hostility",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Romans 5:1 — 'Therefore being justified by faith, we have peace with God through our Lord Jesus Christ.'",
@@ -180,6 +197,7 @@
     },
     "12": {
       "section": 2,
+      "date": "2026-06-01",
       "title": "You are adopted—chosen, beloved, Father",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Ephesians 1:4–5 — 'According as he hath chosen us in him before the foundation of the world, that we should be holy and without blame before him in love: Having predestinated us unto the adoption of children by Jesus Christ to himself, according to the good pleasure of his will.'",
@@ -194,6 +212,7 @@
     },
     "13": {
       "section": 2,
+      "date": "2026-06-02",
       "title": "You have direct access to God",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Ephesians 2:18 — 'For through him we both have access by one Spirit unto the Father.'",
@@ -208,6 +227,7 @@
     },
     "14": {
       "section": 2,
+      "date": "2026-06-03",
       "title": "Your prayers are not low-grade; you have first-class treatment",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Philippians 4:6–7 — 'Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and your minds through Christ Jesus.'",
@@ -222,6 +242,7 @@
     },
     "15": {
       "section": 2,
+      "date": "2026-06-04",
       "title": "You are an insider; God does His work through you",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "2 Corinthians 5:20 — 'Now then we are ambassadors for Christ, as though God did beseech you by us: we pray you in Christ's stead, be ye reconciled to God.'",
@@ -236,6 +257,7 @@
     },
     "16": {
       "section": 2,
+      "date": "2026-06-05",
       "title": "He sees you as up there with Him, not as weak",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Psalm 8:5 — 'For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.'",
@@ -250,6 +272,7 @@
     },
     "17": {
       "section": 2,
+      "date": "2026-06-06",
       "title": "You have boldness—to speak and act for Him, and to speak to Him",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Ephesians 3:12 — 'In whom we have boldness and access with confidence by the faith of him.'",
@@ -264,6 +287,7 @@
     },
     "18": {
       "section": 2,
+      "date": "2026-06-07",
       "title": "Reconciliation: He calls you back; confession removes your barrier",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "1 John 1:7–9 — 'But if we walk in the light, as he is in the light, we have fellowship one with another, and the blood of Jesus Christ his Son cleanseth us from all sin... If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.'",
@@ -278,6 +302,7 @@
     },
     "19": {
       "section": 2,
+      "date": "2026-06-08",
       "title": "God's punishment fell on Christ; consequences are real but not punitive",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Isaiah 53:5 — 'But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.'",
@@ -292,6 +317,7 @@
     },
     "20": {
       "section": 2,
+      "date": "2026-06-09",
       "title": "Grace super abounds; God turns your mistakes into wins",
       "recommended": "Brennan Manning - The Ragamuffin Gospel",
       "mainScripture": "Romans 5:20 — 'Moreover the law entered, that the offence might abound. But where sin abounded, grace did much more abound.'",
@@ -303,6 +329,246 @@
       ],
       "reality": "You will make mistakes. You will fail. You will stumble. And in those moments, grace doesn't just cover you—it super-abounds. It's excessive. Generous. Lavish.\n\nMore than that: God takes your mistakes and turns them into wins. Your failures become wisdom. Your stumbles become compassion (you understand what others go through). Your regrets become maturity. This is not permission to sin carelessly. This is the reality of living under grace: God is for you. Even when you mess up. Especially when you mess up. He's right there, turning it into something good.",
       "important": "This is where Section 2 lands: You are at peace with God. You are His beloved child. You have direct access and first-class treatment. You are an insider doing God's work. He sees you as capable and crowns you with honor. You speak boldly to Him and for Him. When you separate yourself through sin, He calls you back immediately. His punishment fell on Christ, not you. And through it all, grace super-abounds.\n\nYou are living under an economy of abundance, not scarcity. God is not rationing grace. He's not saying, 'Well, you've used up your forgiveness quota.' He's saying, 'Where you think you've failed most, grace abounds most.' This is the peace that passes understanding: You are completely, lavishly, abundantly loved—not because of what you do, but because of who you are in Christ."
+    },
+    "21": {
+      "date": "2026-06-10"
+    },
+    "22": {
+      "date": "2026-06-11"
+    },
+    "23": {
+      "date": "2026-06-12"
+    },
+    "24": {
+      "date": "2026-06-13"
+    },
+    "25": {
+      "date": "2026-06-14"
+    },
+    "26": {
+      "date": "2026-06-15"
+    },
+    "27": {
+      "date": "2026-06-16"
+    },
+    "28": {
+      "date": "2026-06-17"
+    },
+    "29": {
+      "date": "2026-06-18"
+    },
+    "30": {
+      "date": "2026-06-19"
+    },
+    "31": {
+      "date": "2026-06-20"
+    },
+    "32": {
+      "date": "2026-06-21"
+    },
+    "33": {
+      "date": "2026-06-22"
+    },
+    "34": {
+      "date": "2026-06-23"
+    },
+    "35": {
+      "date": "2026-06-24"
+    },
+    "36": {
+      "date": "2026-06-25"
+    },
+    "37": {
+      "date": "2026-06-26"
+    },
+    "38": {
+      "date": "2026-06-27"
+    },
+    "39": {
+      "date": "2026-06-28"
+    },
+    "40": {
+      "date": "2026-06-29"
+    },
+    "41": {
+      "date": "2026-06-30"
+    },
+    "42": {
+      "date": "2026-07-01"
+    },
+    "43": {
+      "date": "2026-07-02"
+    },
+    "44": {
+      "date": "2026-07-03"
+    },
+    "45": {
+      "date": "2026-07-04"
+    },
+    "46": {
+      "date": "2026-07-05"
+    },
+    "47": {
+      "date": "2026-07-06"
+    },
+    "48": {
+      "date": "2026-07-07"
+    },
+    "49": {
+      "date": "2026-07-08"
+    },
+    "50": {
+      "date": "2026-07-09"
+    },
+    "51": {
+      "date": "2026-07-10"
+    },
+    "52": {
+      "date": "2026-07-11"
+    },
+    "53": {
+      "date": "2026-07-12"
+    },
+    "54": {
+      "date": "2026-07-13"
+    },
+    "55": {
+      "date": "2026-07-14"
+    },
+    "56": {
+      "date": "2026-07-15"
+    },
+    "57": {
+      "date": "2026-07-16"
+    },
+    "58": {
+      "date": "2026-07-17"
+    },
+    "59": {
+      "date": "2026-07-18"
+    },
+    "60": {
+      "date": "2026-07-19"
+    },
+    "61": {
+      "date": "2026-07-20"
+    },
+    "62": {
+      "date": "2026-07-21"
+    },
+    "63": {
+      "date": "2026-07-22"
+    },
+    "64": {
+      "date": "2026-07-23"
+    },
+    "65": {
+      "date": "2026-07-24"
+    },
+    "66": {
+      "date": "2026-07-25"
+    },
+    "67": {
+      "date": "2026-07-26"
+    },
+    "68": {
+      "date": "2026-07-27"
+    },
+    "69": {
+      "date": "2026-07-28"
+    },
+    "70": {
+      "date": "2026-07-29"
+    },
+    "71": {
+      "date": "2026-07-30"
+    },
+    "72": {
+      "date": "2026-07-31"
+    },
+    "73": {
+      "date": "2026-08-01"
+    },
+    "74": {
+      "date": "2026-08-02"
+    },
+    "75": {
+      "date": "2026-08-03"
+    },
+    "76": {
+      "date": "2026-08-04"
+    },
+    "77": {
+      "date": "2026-08-05"
+    },
+    "78": {
+      "date": "2026-08-06"
+    },
+    "79": {
+      "date": "2026-08-07"
+    },
+    "80": {
+      "date": "2026-08-08"
+    },
+    "81": {
+      "date": "2026-08-09"
+    },
+    "82": {
+      "date": "2026-08-10"
+    },
+    "83": {
+      "date": "2026-08-11"
+    },
+    "84": {
+      "date": "2026-08-12"
+    },
+    "85": {
+      "date": "2026-08-13"
+    },
+    "86": {
+      "date": "2026-08-14"
+    },
+    "87": {
+      "date": "2026-08-15"
+    },
+    "88": {
+      "date": "2026-08-16"
+    },
+    "89": {
+      "date": "2026-08-17"
+    },
+    "90": {
+      "date": "2026-08-18"
+    },
+    "91": {
+      "date": "2026-08-19"
+    },
+    "92": {
+      "date": "2026-08-20"
+    },
+    "93": {
+      "date": "2026-08-21"
+    },
+    "94": {
+      "date": "2026-08-22"
+    },
+    "95": {
+      "date": "2026-08-23"
+    },
+    "96": {
+      "date": "2026-08-24"
+    },
+    "97": {
+      "date": "2026-08-25"
+    },
+    "98": {
+      "date": "2026-08-26"
+    },
+    "99": {
+      "date": "2026-08-27"
+    },
+    "100": {
+      "date": "2026-08-28"
     }
   }
 }

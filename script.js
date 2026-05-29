@@ -4,10 +4,27 @@ const app = {
 };
 
 const CONFIG = {
-    START_DATE: new Date(2026, 4, 21),
     TOTAL_DAYS: 100,
     STORAGE_KEY: 'currentDay',
 };
+
+const DATE_FORMATTER = new Intl.DateTimeFormat(undefined, {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+});
+
+function parseDayDate(iso) {
+    if (!iso) return null;
+    const [y, m, d] = iso.split('-').map(Number);
+    return new Date(y, m - 1, d);
+}
+
+function formatDayDate(iso) {
+    const date = parseDayDate(iso);
+    return date ? DATE_FORMATTER.format(date) : '';
+}
 
 /* ===== Initialize ===== */
 document.addEventListener('DOMContentLoaded', async () => {
@@ -31,12 +48,27 @@ async function loadContent() {
 
 /* ===== Day Calculation ===== */
 function calculateCurrentDay() {
+    if (!app.data?.days) return 1;
+
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    const startDate = new Date(CONFIG.START_DATE);
-    startDate.setHours(0, 0, 0, 0);
-    const daysDiff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-    return Math.max(1, Math.min(daysDiff + 1, CONFIG.TOTAL_DAYS));
+    const todayMs = today.getTime();
+
+    let bestDay = 1;
+    let bestMs = -Infinity;
+
+    for (let i = 1; i <= CONFIG.TOTAL_DAYS; i++) {
+        const entry = app.data.days[i.toString()];
+        const date = parseDayDate(entry?.date);
+        if (!date) continue;
+        const ms = date.getTime();
+        if (ms <= todayMs && ms > bestMs) {
+            bestMs = ms;
+            bestDay = i;
+        }
+    }
+
+    return bestDay;
 }
 
 function getCurrentDay() {
@@ -127,6 +159,9 @@ function renderDayGrid() {
             btn.className = 'day-button';
             if (day === app.currentDay) btn.classList.add('current');
             btn.textContent = day;
+            const dayEntry = app.data.days?.[day.toString()];
+            const formatted = formatDayDate(dayEntry?.date);
+            if (formatted) btn.title = formatted;
             btn.addEventListener('click', () => goToDay(day));
             daysDiv.appendChild(btn);
         }
@@ -211,6 +246,14 @@ function render() {
 
     // Update header
     document.getElementById('dayNumber').textContent = app.currentDay;
+
+    // Update date
+    const dateEl = document.getElementById('dayDate');
+    if (dateEl) {
+        const formatted = formatDayDate(dayData.date);
+        dateEl.textContent = formatted;
+        dateEl.style.display = formatted ? '' : 'none';
+    }
 
     // Update progress arc
     const progressPercent = (app.currentDay / CONFIG.TOTAL_DAYS) * 100;
