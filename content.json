@@ -27,6 +27,17 @@
         11,
         20
       ]
+    },
+    {
+      "id": 3,
+      "title": "Spirit, Soul & Body",
+      "description": "Understanding your tripartite nature and how to live from your spirit",
+      "bgColor": "#ede9fe",
+      "textColor": "#4c1d95",
+      "dayRange": [
+        21,
+        43
+      ]
     }
   ],
   "days": {
@@ -332,73 +343,349 @@
       "important": "This is where Section 2 lands: You are at peace with God. You are His beloved child. You have direct access and first-class treatment. You are an insider doing God's work. He sees you as capable and crowns you with honor. You speak boldly to Him and for Him. When you separate yourself through sin, He calls you back immediately. His punishment fell on Christ, not you. And through it all, grace super-abounds.\n\nYou are living under an economy of abundance, not scarcity. God is not rationing grace. He's not saying, 'Well, you've used up your forgiveness quota.' He's saying, 'Where you think you've failed most, grace abounds most.' This is the peace that passes understanding: You are completely, lavishly, abundantly loved—not because of what you do, but because of who you are in Christ."
     },
     "21": {
-      "date": "2026-06-10"
+      "section": 3,
+      "date": "2026-06-10",
+      "title": "God's Mirror—You Are Spirit, Soul, and Body",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "1 Thessalonians 5:23 — 'And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ.'",
+      "supportingScriptures": [
+        "James 1:23–24 — 'For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass: For he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was.'",
+        "Hebrews 4:12 — 'For the word of God is quick, and powerful, and sharper than any twoedged sword, piercing even to the dividing asunder of soul and spirit, and of the joints and marrow, and is a discerner of the thoughts and intents of the heart.'",
+        "2 Corinthians 3:18 — 'But we all, with open face beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory, even as by the Spirit of the Lord.'",
+        "Genesis 2:7 — 'And the Lord God formed man of the dust of the ground, and breathed into his nostrils the breath of life; and man became a living soul.'"
+      ],
+      "reality": "You are a spirit. You have a soul—mind, will, and emotions. You live in a body. This is not abstract theology; it is the most practical truth about you. Understanding this changes everything about how you receive from God, why some prayers seem to work and others don't, and why emotional turmoil doesn't have to control you.\n\nJust as a mirror shows your physical reflection, God's Word shows your spiritual reality. Most people operate from the outside in—body → soul → spirit. They let what they see, feel, and think determine what they believe spiritually. God's design is the reverse: spirit → soul → body. The life of God flows from within outward.",
+      "important": "Why does this matter? Because if you don't know that you're a spirit being, you'll judge your spiritual state by how you feel emotionally or how you're doing physically. You'll think: 'I don't feel forgiven, so maybe I'm not.' Or 'I feel far from God, so maybe He's moved away.' But feelings live in the soul. Your spirit—born of God—is not subject to feelings. What your spirit is, it is independent of what your emotions say.\n\nGod's Word is a mirror: it shows you what you really are, not what you feel you are. Look into it. See yourself the way it describes you. That image—not your emotional state—is your true reality."
     },
     "22": {
-      "date": "2026-06-11"
+      "section": 3,
+      "date": "2026-06-11",
+      "title": "Release What You've Already Got!",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "2 Peter 1:3 — 'According as his divine power hath given unto us all things that pertain unto life and godliness, through the knowledge of him that hath called us to glory and virtue.'",
+      "supportingScriptures": [
+        "Ephesians 1:3 — 'Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ.'",
+        "Colossians 2:10 — 'And ye are complete in him, which is the head of all principality and power.'",
+        "John 16:15 — 'All things that the Father hath are mine: therefore said I, that he shall take of mine, and shall shew it unto you.'",
+        "1 Corinthians 2:12 — 'Now we have received, not the spirit of the world, but the spirit which is of God; that we might know the things that are freely given to us of God.'"
+      ],
+      "reality": "The prayer 'Give me more faith, more anointing, more grace, more love' misunderstands the new birth. At salvation, God gave everything. Not a down payment. Not the starter pack. Everything that pertains to life and godliness was given—past tense, complete. This means you don't need more of God; you need to release more of what you already have.\n\nThe problem is not a shortage in God's supply. The problem is a blockage in the pipeline. The supply is full. The obstruction is in the soul: unbelief, wrong thinking, fear, self-condemnation. The work is not acquiring more—it's removing what blocks the flow.",
+      "important": "Many believers spend years begging God for what He already gave at the new birth. 'Lord, give me faith'—but Romans 12:3 says He already dealt the measure of faith. 'Lord, heal me'—but 1 Peter 2:24 says by His stripes you were healed.\n\nThe shift is from petition to release: 'Lord, I receive what You've already given. I open my heart to it. I believe it's there and I trust it to flow.' This is not positive thinking. This is believing the Word over your circumstances."
     },
     "23": {
-      "date": "2026-06-12"
+      "section": 3,
+      "date": "2026-06-12",
+      "title": "The Pivot Point—Your Soul Determines the Flow",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Romans 12:2 — 'And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God.'",
+      "supportingScriptures": [
+        "Proverbs 23:7 — 'For as he thinketh in his heart, so is he.'",
+        "Isaiah 26:3 — 'Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.'",
+        "Philippians 4:8 — 'Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.'",
+        "Ephesians 4:23 — 'And be renewed in the spirit of your mind.'"
+      ],
+      "reality": "The soul—your mind, will, and emotions—is the pivot point between the spirit and the body. It is the valve that determines how much of the spirit's life flows through to your physical experience. A renewed mind allows full flow. An unrenewed mind restricts it.\n\nThis is why two people with the same spiritual standing before God can have vastly different experiences of His power and peace. The difference is not in their spirit. The difference is in their soul. The one with the renewed mind experiences more because the valve is open wider.",
+      "important": "The soul doesn't get born again. It gets transformed. This is the work of a lifetime: renewing the mind to agree with what the spirit already is and what God's Word says.\n\nThe renewing is not passive. You don't wait for God to transform your mind. You are the one who takes every thought captive (2 Cor 10:5), sets your mind on things above (Col 3:2), feeds on the Word (Psalm 1:2). God gave you the spirit and the Word; you do the renewing. The speed of your transformation matches the consistency of that work."
     },
     "24": {
-      "date": "2026-06-13"
+      "section": 3,
+      "date": "2026-06-13",
+      "title": "Renew, Acknowledge & Experience",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Philemon 1:6 — 'That the communication of thy faith may become effectual by the acknowledging of every good thing which is in you in Christ Jesus.'",
+      "supportingScriptures": [
+        "Hebrews 10:23 — 'Let us hold fast the profession of our faith without wavering; for he is faithful that promised.'",
+        "Mark 11:23 — 'For verily I say unto you, That whosoever shall say unto this mountain, Be thou removed, and be thou cast into the sea; and shall not doubt in his heart, but shall believe that those things which he saith shall come to pass; he shall have whatsoever he saith.'",
+        "Joshua 1:8 — 'This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous.'",
+        "Proverbs 18:21 — 'Death and life are in the power of the tongue: and they that love it shall eat the fruit thereof.'"
+      ],
+      "reality": "Faith has a three-part activation process. First: renewing—you feed on God's Word until what it says about you becomes more real than what your senses say. Second: acknowledging—you speak (confess, declare) what you now believe. Faith is not silent. Third: experiencing—as you renew and acknowledge consistently, spiritual reality begins to manifest in your physical experience.\n\nThe key word in Philemon 1:6 is 'effectual'—your faith becomes effective when you acknowledge every good thing in you in Christ. The good things are already in you. Acknowledging them activates them.",
+      "important": "Many believers skip the acknowledgment step. They renew quietly in their minds, then wait for something to happen. But Mark 11:23 says 'shall say.' Faith speaks. It is not rude or presumptuous to declare what God's Word says about you. It's agreement with heaven.\n\nStart small: begin each day acknowledging three things that are true about you in Christ. 'I am righteous. I have the peace of God. My faith is sufficient for today.' Not hoping. Not wishing. Acknowledging. This is not affirmation psychology—this is releasing what already is."
     },
     "25": {
-      "date": "2026-06-14"
+      "section": 3,
+      "date": "2026-06-14",
+      "title": "Reality—Carnal or Spiritual?",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Romans 8:5–6 — 'For they that are after the flesh do mind the things of the flesh; but they that are after the Spirit the things of the Spirit. For to be carnally minded is death; but to be spiritually minded is life and peace.'",
+      "supportingScriptures": [
+        "2 Corinthians 4:18 — 'While we look not at the things which are seen, but at the things which are not seen: for the things which are seen are temporal; but the things which are not seen are eternal.'",
+        "Colossians 3:2 — 'Set your affection on things above, not on things on the earth.'",
+        "Romans 8:14 — 'For as many as are led by the Spirit of God, they are the sons of God.'",
+        "Hebrews 11:1 — 'Now faith is the substance of things hoped for, the evidence of things not seen.'"
+      ],
+      "reality": "There are two realities: the physical, natural reality your five senses report—and the spiritual reality God's Word describes. Both are real. But they are not equal. Spiritual reality is more foundational, more permanent, more authoritative. Physical reality is subject to change by spiritual reality—not the reverse.\n\nThis is why faith looks foolish to the natural mind. Faith insists on the reality of what is not yet seen. But it's not denial of the physical—it's recognition that the spiritual is more fundamental.",
+      "important": "'To be carnally minded is death; to be spiritually minded is life and peace.' This is not about being 'super-spiritual' or ignoring practical life. It's about what you use as your primary reference point.\n\nWhen circumstances say 'you're failing,' what do you anchor to? When your body says 'you're sick,' what do you say back? When your emotions say 'you're abandoned,' what does your spirit say? The one who has learned to set her mind on spiritual reality will not be destroyed by physical turbulence, because she is anchored in something that doesn't shake."
     },
     "26": {
-      "date": "2026-06-15"
+      "section": 3,
+      "date": "2026-06-15",
+      "title": "Righteous & Holy—You the New Creation",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "2 Corinthians 5:17 — 'Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.'",
+      "supportingScriptures": [
+        "Ephesians 4:24 — 'And that ye put on the new man, which after God is created in righteousness and true holiness.'",
+        "1 Peter 2:9 — 'But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light.'",
+        "Romans 6:4 — 'Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life.'",
+        "Colossians 1:22 — 'In the body of his flesh through death, to present you holy and unblameable and unreproveable in his sight.'"
+      ],
+      "reality": "You are not a reformed sinner. Not a sinner trying to be good. Not a recovering sinner who still needs to prove herself. You are a new creation. Your spirit—the real you—was created anew at salvation. Old things passed away. This is not an aspiration. It is what happened.\n\nYour spirit is righteous—not because you behave righteously, but because God created it righteous. Your spirit is holy—not because you feel holy in every moment, but because God declared you holy in Christ. This is your nature at the core level.",
+      "important": "The old man—the sinful nature inherited from Adam—was dealt with at the cross. The struggle you experience is not the old nature reasserting itself; it's the soul not yet renewing to match what the spirit already is.\n\nThis reframes the Christian life entirely. You are not trying to become righteous—you already are. You are not trying to achieve holiness—you already are holy. The Christian life is the process of the outer life coming into alignment with what is already true in the spirit. Live from the inside out."
     },
     "27": {
-      "date": "2026-06-16"
+      "section": 3,
+      "date": "2026-06-16",
+      "title": "One with Jesus",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "1 Corinthians 6:17 — 'But he that is joined unto the Lord is one spirit.'",
+      "supportingScriptures": [
+        "John 17:21–23 — 'That they all may be one; as thou, Father, art in me, and I in thee, that they also may be one in us... I in them, and thou in me, that they may be made perfect in one.'",
+        "Galatians 2:20 — 'I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.'",
+        "1 John 4:13 — 'Hereby know we that we dwell in him, and he in us, because he hath given us of his Spirit.'",
+        "Romans 8:11 — 'But if the Spirit of him that raised up Jesus from the dead dwell in you, he that raised up Christ from the dead shall also quicken your mortal bodies by his Spirit that dwelleth in you.'"
+      ],
+      "reality": "This is perhaps the most staggering reality in all of Christianity. You are not just in relationship with Jesus. You are not just forgiven by Jesus. You are one spirit with Him. United. Joined. The same Spirit that raised Christ from the dead dwells in you—not a derivative, not a copy, the same Spirit.\n\nThis means what is true of Jesus, the Father declares true of you. As He is, so are we in this world (1 John 4:17). Not as He was—as He IS. Glorified. Victorious. Undefeated. That is your identity in the spirit, right now.",
+      "important": "The implication of union is staggering. You don't have to pray as someone separated from God trying to reach Him. You are in Him and He is in you. Prayer is not a long-distance call—it's an inside conversation. You don't need to feel worthy enough to have access. You are already one with the source.\n\nThis union is also the source of your authority over the enemy. The devil does not fear you because of how good you are. He fears the Christ who is in you, who is one with you."
     },
     "28": {
-      "date": "2026-06-17"
+      "section": 3,
+      "date": "2026-06-17",
+      "title": "Sealed!",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Ephesians 1:13–14 — 'In whom ye also trusted, after that ye heard the word of truth, the gospel of your salvation: in whom also after that ye believed, ye were sealed with that holy Spirit of promise, Which is the earnest of our inheritance until the redemption of the purchased possession, unto the praise of his glory.'",
+      "supportingScriptures": [
+        "2 Corinthians 1:21–22 — 'Now he which stablisheth us with you in Christ, and hath anointed us, is God; Who hath also sealed us, and given the earnest of the Spirit in our hearts.'",
+        "John 6:39 — 'And this is the Father's will which hath sent me, that of all which he hath given me I should lose nothing, but should raise it up again at the last day.'",
+        "Ephesians 4:30 — 'And grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption.'",
+        "Romans 8:15–16 — 'For ye have not received the spirit of bondage again to fear; but ye have received the Spirit of adoption, whereby we cry, Abba, Father. The Spirit itself beareth witness with our spirit, that we are the children of God.'"
+      ],
+      "reality": "A seal in ancient times meant ownership, security, and authority. When a king put his seal on something, it was protected under royal authority. When God sealed you with His Holy Spirit, He was marking you as His—protected by His authority, guaranteed by His promise.\n\nThe Holy Spirit in you is also an 'earnest'—a deposit, a down payment, a guarantee of what's to come. This sealing is not temporary. Not conditional. Ephesians 4:30 says you are sealed 'unto the day of redemption.' Not until you sin. Not until you doubt. Until the day of redemption.",
+      "important": "Many Christians live with persistent fear about their salvation—'What if I lose it? What if I sin too much?' But the sealing is God's act, not yours. You didn't seal yourself. God sealed you. And the seal is held by His faithfulness, not yours.\n\nSatan tries to make you doubt the seal—to make you feel unworthy, unsaved, or barely hanging on. But the seal is not how you feel. It is what God did when you believed. You are sealed. That is permanent."
     },
     "29": {
-      "date": "2026-06-18"
+      "section": 3,
+      "date": "2026-06-18",
+      "title": "Eternal Redemption",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Hebrews 9:12 — 'Neither by the blood of goats and calves, but by his own blood he entered in once into the holy place, having obtained eternal redemption for us.'",
+      "supportingScriptures": [
+        "Hebrews 9:25–26 — 'Nor yet that he should offer himself often... but now once in the end of the world hath he appeared to put away sin by the sacrifice of himself.'",
+        "Hebrews 10:14 — 'For by one offering he hath perfected for ever them that are sanctified.'",
+        "1 Peter 1:18–19 — 'Forasmuch as ye know that ye were not redeemed with corruptible things, as silver and gold... But with the precious blood of Christ, as of a lamb without blemish and without spot.'",
+        "Romans 6:10 — 'For in that he died, he died unto sin once: but in that he liveth, he liveth unto God.'"
+      ],
+      "reality": "The word 'eternal' in 'eternal redemption' is doing enormous work. The Old Testament sacrifices had to be repeated because they were temporary—they covered sin for a season but didn't remove it. Jesus' sacrifice was different: it obtained eternal redemption. Not annual. Not seasonal. Not until you sin again. Eternal.\n\nThis means your redemption doesn't need renewing. It doesn't expire. It cannot be revoked by your behavior. When Christ said 'It is finished,' He was announcing that the work was complete, permanent, and unrepeatable because it didn't need to be repeated.",
+      "important": "Think about what you are implying when you live in constant uncertainty about your standing before God. You're suggesting that Christ's blood wasn't quite enough—that it covered yesterday but might not cover today. This dishonors the finished work.\n\nConfidence in your standing before God is not arrogance. It's agreement with what the blood accomplished. The eternal redemption is an established fact. Walk in it."
     },
     "30": {
-      "date": "2026-06-19"
+      "section": 3,
+      "date": "2026-06-19",
+      "title": "Standard Gospel Questions—What You Need to Know",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "John 10:28–29 — 'And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand. My Father, which gave them me, is greater than all; and no man is able to pluck them out of my Father's hand.'",
+      "supportingScriptures": [
+        "Romans 10:9–10 — 'That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved. For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation.'",
+        "Acts 16:31 — 'And they said, Believe on the Lord Jesus Christ, and thou shalt be saved, and thy house.'",
+        "1 John 5:13 — 'These things have I written unto you that believe on the name of the Son of God; that ye may know that ye have eternal life, and that ye may believe on the name of the Son of God.'",
+        "Hebrews 7:25 — 'Wherefore he is able also to save them to the uttermost that come unto God by him, seeing he ever liveth to make intercession for them.'"
+      ],
+      "reality": "There are standard questions every believer encounters: Can I lose my salvation? What if I fall away? Is there a limit to what Jesus covers? What about serious sin?\n\nJesus answers with extraordinary clarity: 'I give them eternal life.' Given. Present tense. Not provisionally given, not given as long as they perform. Given. And 'they shall never perish'—in Greek this is an emphatic double negative, the strongest possible: they will absolutely not perish. No man—not even you yourself—can pluck you out of His hand.",
+      "important": "Why does God want you to have certainty? Because 1 John 5:13 says these things are written 'that you may KNOW you have eternal life.' Not hope you have it. Not feel like you might have it. Know. The assurance of salvation is not presumption—it's the purpose of the gospel.\n\nWhen you know, you live differently. You approach God boldly. You invest your whole life without the reservation that comes from 'what if I'm not actually saved.' Certainty is not the enemy of humility—it is the ground on which real faith is built."
     },
     "31": {
-      "date": "2026-06-20"
+      "section": 3,
+      "date": "2026-06-20",
+      "title": "Once Saved, Always Saved?",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Romans 8:38–39 — 'For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come, Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.'",
+      "supportingScriptures": [
+        "Philippians 1:6 — 'Being confident of this very thing, that he which hath begun a good work in you will perform it until the day of Jesus Christ.'",
+        "Jude 1:24 — 'Now unto him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy.'",
+        "John 5:24 — 'Verily, verily, I say unto you, He that heareth my word, and believeth on him that sent me, hath everlasting life, and shall not come into condemnation; but is passed from death unto life.'",
+        "Hebrews 13:5 — '...for he hath said, I will never leave thee, nor forsake thee.'"
+      ],
+      "reality": "The debate about 'once saved, always saved' often misframes the question. The real question is not: 'Is my behavior sufficient to maintain salvation?' The real question is: 'Is Jesus' blood sufficient to secure it?'\n\nIf salvation is by grace, it is by grace from beginning to end—not partly grace and partly works, partly God and partly your faithfulness. Romans 11:6 makes this explicit: 'If by grace, then is it no more of works: otherwise grace is no more grace.' The moment you make your continued salvation dependent on your continued faithfulness, you've made it about you and not about Christ.",
+      "important": "'He that hath begun a good work in you will complete it' (Phil 1:6). God is the one who began it. God is the one completing it. Your role is to believe and cooperate—not to hold salvation together through willpower.\n\nThis doesn't make holiness irrelevant. It makes it possible. You don't live holy to maintain salvation. You live holy because salvation has transformed you from the inside—and the transformed nature produces transformed living, without the fear-based striving that comes from insecurity."
     },
     "32": {
-      "date": "2026-06-21"
+      "section": 3,
+      "date": "2026-06-21",
+      "title": "Fullness Received—You Are Complete in Him",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Colossians 2:9–10 — 'For in him dwelleth all the fulness of the Godhead bodily. And ye are complete in him, which is the head of all principality and power.'",
+      "supportingScriptures": [
+        "John 1:16 — 'And of his fulness have all we received, and grace for grace.'",
+        "Ephesians 3:19 — 'And to know the love of Christ, which passeth knowledge, that ye might be filled with all the fulness of God.'",
+        "1 Corinthians 1:30 — 'But of him are ye in Christ Jesus, who of God is made unto us wisdom, and righteousness, and sanctification, and redemption.'",
+        "2 Corinthians 9:8 — 'And God is able to make all grace abound toward you; that ye, always having all sufficiency in all things, may abound to every good work.'"
+      ],
+      "reality": "The word 'complete' in Colossians 2:10 is peplērōmenoi—you have been filled to the full, made complete. This describes your state right now, in Christ. Not at some future point of spiritual maturity. Not after years of prayer and fasting. Now.\n\nThis completeness is in Christ, not in yourself. You're not complete because you've arrived spiritually. You're complete because you're in Him, and He is the fullness of the Godhead. When you are in the container, you have what the container holds.",
+      "important": "The implication: you don't need a second blessing to become complete. You don't need more anointing from a special preacher. You don't need the right prophecy to activate what you lack. You are complete. The need now is to understand and release what you already have.\n\nThis is not an excuse for complacency—it's the foundation for confidence. A woman who knows she is complete in Christ doesn't spend her life searching for what she lacks. She spends her life releasing what she has."
     },
     "33": {
-      "date": "2026-06-22"
+      "section": 3,
+      "date": "2026-06-22",
+      "title": "God's Supernatural Faith",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Romans 12:3 — 'For I say, through the grace given unto me, to every man that is among you, not to think of himself more highly than he ought to think; but to think soberly, according as God hath dealt to every man the measure of faith.'",
+      "supportingScriptures": [
+        "Mark 11:22 — 'And Jesus answering saith unto them, Have faith in God.' [lit. Have the faith of God]",
+        "Hebrews 12:2 — 'Looking unto Jesus the author and finisher of our faith; who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of God.'",
+        "Ephesians 2:8 — 'For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.'",
+        "Galatians 2:20 — '...the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.'"
+      ],
+      "reality": "Faith is not a human ability. It's not confidence generated by willpower or positive thinking. The faith that moves mountains is God's own faith—supernatural, creative, irresistible—deposited in your spirit at the new birth.\n\nMark 11:22 in the original is 'Have the faith of God.' Jesus was saying: operate in the same faith God operates in. Romans 12:3 says God dealt 'the measure of faith' to every man—the same measure, not different sizes for different spiritual levels.",
+      "important": "This reframes prayer entirely. You are not praying for faith you lack; you're accessing faith you already have. You are not working yourself up into believing; you're releasing what's already in you. The faith of God, resident in your spirit, is more than sufficient for any situation you will ever face.\n\nThe problem is not insufficient faith. The problem is an unrenewed mind that says 'I don't have enough faith.' But the measure of faith you received is the same measure by which Jesus operated. Acknowledge it. It's there."
     },
     "34": {
-      "date": "2026-06-23"
+      "section": 3,
+      "date": "2026-06-23",
+      "title": "Like Precious Faith",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "2 Peter 1:1 — 'Simon Peter, a servant and an apostle of Jesus Christ, to them that have obtained like precious faith with us through the righteousness of God and our Saviour Jesus Christ.'",
+      "supportingScriptures": [
+        "1 Corinthians 12:9 — 'To another faith by the same Spirit.'",
+        "Matthew 17:20 — '...If ye have faith as a grain of mustard seed, ye shall say unto this mountain, Remove hence to yonder place; and it shall remove; and nothing shall be impossible unto you.'",
+        "Luke 17:5–6 — 'And the apostles said unto the Lord, Increase our faith. And the Lord said, If ye had faith as a grain of mustard seed, ye might say unto this sycamine tree, Be thou plucked up by the root...'",
+        "Hebrews 11:6 — 'But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.'"
+      ],
+      "reality": "'Like precious faith'—Peter wasn't writing to apostles or spiritual giants. He was writing to ordinary believers who had 'obtained' (received by grace, as if given by inheritance) the same quality of faith as the apostles. Same quality. Not less precious. Not inferior. Like precious.\n\nThe faith you received at salvation is not a starter-pack faith that needs to be upgraded. It's the same faith that Peter and Paul and John operated in. The issue isn't the quality of your faith—it's whether you're using it.",
+      "important": "The disciples asked Jesus to increase their faith (Luke 17:5). Jesus didn't say 'I'll give you more'—He said 'If you had faith as a grain of mustard seed,' meaning: the size isn't the issue. Use what you have. A mustard seed of applied faith moves mountains; a mountain of unused faith moves nothing.\n\nYour faith doesn't need increasing. It needs exercising. Use it. Apply it. Speak it. Act on it. The woman who sees results is not the one with more faith—she's the one who uses the faith she has."
     },
     "35": {
-      "date": "2026-06-24"
+      "section": 3,
+      "date": "2026-06-24",
+      "title": "Your Spirit Knows All Things",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "1 Corinthians 2:10–12 — 'But God hath revealed them unto us by his Spirit: for the Spirit searcheth all things, yea, the deep things of God. For what man knoweth the things of a man, save the spirit of man which is in him? even so the things of God knoweth no man, but the Spirit of God. Now we have received, not the spirit of the world, but the spirit which is of God; that we might know the things that are freely given to us of God.'",
+      "supportingScriptures": [
+        "1 John 2:20 — 'But ye have an unction from the Holy One, and ye know all things.'",
+        "1 John 2:27 — 'But the anointing which ye have received of him abideth in you, and ye need not that any man teach you: but as the same anointing teacheth you of all things, and is truth, and is no lie, and even as it hath taught you, ye shall abide in him.'",
+        "John 16:13 — 'Howbeit when he, the Spirit of truth, is come, he will guide you into all truth: for he shall not speak of himself; but whatsoever he shall hear, that shall he speak: and he will shew you things to come.'",
+        "Proverbs 20:27 — 'The spirit of man is the candle of the Lord, searching all the inward parts of the belly.'"
+      ],
+      "reality": "Your born-again spirit has been joined with the Spirit of God who 'searches all things, even the deep things of God.' This means your spirit—right now—has access to knowledge, wisdom, and understanding that transcends your natural mind's capacity. Not someday. Now.\n\n1 John 2:20 says 'ye know all things.' Your spirit knows—not your intellect, your spirit. The challenge is learning to access and trust what your spirit knows, rather than overriding it with natural reasoning.",
+      "important": "Many believers have had the experience of a knowing—something in them that said 'don't go that way' or 'call that person' or 'something is wrong here.' That's the spirit operating. But because we're untrained, we often dismiss these impressions because we can't explain them rationally.\n\nLearning to listen to your spirit—to sit still enough to hear what the Spirit knows—is one of the most important skills of the Christian life. It's not mysticism; it's how God designed you. Your spirit is connected to the source of all knowledge. Learn to consult it."
     },
     "36": {
-      "date": "2026-06-25"
+      "section": 3,
+      "date": "2026-06-25",
+      "title": "Releasing the Mind of Christ",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "1 Corinthians 2:16 — 'For who hath known the mind of the Lord, that he may instruct him? But we have the mind of Christ.'",
+      "supportingScriptures": [
+        "Philippians 2:5 — 'Let this mind be in you, which was also in Christ Jesus.'",
+        "Romans 8:27 — 'And he that searcheth the hearts knoweth what is the mind of the Spirit, because he maketh intercession for the saints according to the will of God.'",
+        "Isaiah 55:8–9 — 'For my thoughts are not your thoughts, neither are your ways my ways, saith the Lord. For as the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts.'",
+        "2 Corinthians 10:5 — 'Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ.'"
+      ],
+      "reality": "'We have the mind of Christ.' Not 'we can aspire to the mind of Christ.' Not 'with enough spiritual work, we might attain it.' We have it. Your spirit is joined to Christ; His mind is accessible to yours. The wisdom that created the universe, that knows all things, that is never confused—that mind is available to you.\n\nThe renewing of your mind (Romans 12:2) is the process of releasing the mind of Christ from your spirit into your daily thinking. As your soul is renewed with the Word, more of what Christ knows becomes accessible to your conscious mind.",
+      "important": "This changes how you approach decisions, problems, and unknowns. You are not limited to your natural intelligence or past experience. You have access to the mind of Christ. When you face a problem you can't solve, you're not alone—you have a resource that transcends human wisdom.\n\nThe practice: when you're stuck, get quiet and ask the Spirit. Meditate on the Word. Let the mind of Christ surface through a renewed mind. Don't rely on panic or anxiety—those are natural responses. Lean into the supernatural access you have."
     },
     "37": {
-      "date": "2026-06-26"
+      "section": 3,
+      "date": "2026-06-26",
+      "title": "You Are Sanctified—Set Apart from the Inside Out",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Hebrews 10:10 — 'By the which will we are sanctified through the offering of the body of Jesus Christ once for all.'",
+      "supportingScriptures": [
+        "1 Corinthians 6:11 — 'And such were some of you: but ye are washed, but ye are sanctified, but ye are justified in the name of the Lord Jesus, and by the Spirit of our God.'",
+        "John 17:17 — 'Sanctify them through thy truth: thy word is truth.'",
+        "Jude 1:1 — 'Jude, the servant of Jesus Christ, and brother of James, to them that are sanctified by God the Father, and preserved in Jesus Christ, and called.'",
+        "1 Thessalonians 5:23 — 'And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ.'"
+      ],
+      "reality": "Sanctification has two aspects: positional and practical. Positionally—you are sanctified, set apart, consecrated to God right now, by the one offering of Christ. This is complete. It happened. It's not something you achieve; it's something you are. Your spirit is sanctified.\n\nPractically—the soul and body are being sanctified over time, as the Word of God transforms the mind and brings behavior into alignment with the spirit's nature. This is the ongoing work: not achieving sanctification but manifesting it.",
+      "important": "Many believers confuse these two aspects and spend their lives trying to earn what they already have positionally. They punish themselves for failures, trying to 'pay' for the right to be holy. But your holiness is not earned by your discipline—it's given by Christ's offering.\n\nThis doesn't minimize practical holiness. It actually enables it. A woman who knows she's already sanctified doesn't strive for holiness out of fear. She lives out holiness because it's her nature—and that's far more sustainable than performance-based holiness."
     },
     "38": {
-      "date": "2026-06-27"
+      "section": 3,
+      "date": "2026-06-27",
+      "title": "Spirit vs. Flesh",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Galatians 5:17 — 'For the flesh lusteth against the Spirit, and the Spirit against the flesh: and these are contrary the one to the other: so that ye cannot do the things that ye would.'",
+      "supportingScriptures": [
+        "Romans 7:18 — 'For I know that in me (that is, in my flesh,) dwelleth no good thing: for to will is present with me; but how to perform that which is good I find not.'",
+        "Romans 8:13 — 'For if ye live after the flesh, ye shall die: but if ye through the Spirit do mortify the deeds of the body, ye shall live.'",
+        "Galatians 5:19–21 — 'Now the works of the flesh are manifest, which are these; Adultery, fornication, uncleanness, lasciviousness, Idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies, Envyings, murders, drunkenness, revellings... they which do such things shall not inherit the kingdom of God.'",
+        "1 Peter 2:11 — 'Dearly beloved, I beseech you as strangers and pilgrims, abstain from fleshly lusts, which war against the soul.'"
+      ],
+      "reality": "The flesh—the unregenerated desires and patterns of the old nature—is real and it wars against the spirit. This is not a sign of spiritual failure. It's the normal experience of a believer who has a born-again spirit but an unrenewed soul. The battle is not abnormal. What matters is who is winning.\n\nThe flesh is not your spirit. It is the accumulated patterns, appetites, and habits of the old life trying to reassert influence through the body and unrenewed areas of the soul. The spirit opposes it—not by willpower, but by its very nature.",
+      "important": "The victory in spirit-flesh conflict is not won by brute willpower suppressing the flesh. It's won by walking in the spirit—feeding the spirit, renewing the mind, maintaining communion with God—until the spirit's influence overcomes the flesh's pull.\n\nPaul says 'if ye through the Spirit do mortify the deeds of the body' (Rom 8:13). The key word is through—through the Spirit, not through self-effort. The power to overcome the flesh is not in you alone; it's in the Spirit within you. Your job is to cooperate with Him."
     },
     "39": {
-      "date": "2026-06-28"
+      "section": 3,
+      "date": "2026-06-28",
+      "title": "Walk in the Spirit",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Galatians 5:16 — 'This I say then, Walk in the Spirit, and ye shall not fulfil the lust of the flesh.'",
+      "supportingScriptures": [
+        "Romans 8:1 — 'There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.'",
+        "Romans 8:4 — 'That the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit.'",
+        "Galatians 5:25 — 'If we live in the Spirit, let us also walk in the Spirit.'",
+        "Ephesians 5:18 — 'And be not drunk with wine, wherein is excess; but be filled with the Spirit.'"
+      ],
+      "reality": "'Walk in the Spirit' is the simplest and most comprehensive instruction for the Christian life. Walk—not sprint, not strain, not labor. A walk is sustainable, consistent, moment-by-moment. In the Spirit—not in your own strength, not in religious routine, not in good intentions.\n\nThe promise is categorical: walk in the Spirit and you will not fulfil the lust of the flesh. Not 'you might not.' Not 'you'll struggle less.' You will not. The defeat of the flesh is a byproduct of the walk, not a result of fighting the flesh directly.",
+      "important": "How do you walk in the Spirit? It's a lifestyle of keeping in step with what the Spirit is doing: staying in the Word, praying, cultivating awareness of His presence, obeying His promptings. It's not complicated. It's consistent.\n\nThe failures of the Christian life are almost always failures of the walk—breaking from consistent time with God, neglecting the Word, letting the soul run unchecked. Get the walk right and the rest follows. The woman who walks consistently with God will find that the flesh loses its grip—not because she is superior, but because she is connected."
     },
     "40": {
-      "date": "2026-06-29"
+      "section": 3,
+      "date": "2026-06-29",
+      "title": "Praying in the Spirit",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Romans 8:26–27 — 'Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered. And he that searcheth the hearts knoweth what is the mind of the Spirit, because he maketh intercession for the saints according to the will of God.'",
+      "supportingScriptures": [
+        "Jude 1:20 — 'But ye, beloved, building up yourselves on your most holy faith, praying in the Holy Ghost.'",
+        "1 Corinthians 14:4 — 'He that speaketh in an unknown tongue edifieth himself; but he that prophesieth edifieth the church.'",
+        "Ephesians 6:18 — 'Praying always with all prayer and supplication in the Spirit, and watching thereunto with all perseverance and supplication for all saints.'",
+        "1 Corinthians 14:14–15 — 'For if I pray in an unknown tongue, my spirit prayeth, but my understanding is unfruitful. What is it then? I will pray with the spirit, and I will pray with the understanding also: and I will sing with the spirit, and I will sing with the understanding also.'"
+      ],
+      "reality": "One of the most underused gifts of the new birth is the capacity to pray in the Spirit—to allow the Holy Spirit to pray through your spirit, bypassing the limitations of your natural mind. Your mind doesn't always know what to pray. Your spirit, joined to God's Spirit, always does.\n\nRomans 8:26 says the Spirit 'helps our infirmities'—our weaknesses, limitations, not-knowing. When you don't know how to pray, when you're overwhelmed, when you've run out of words, the Spirit prays through you according to the perfect will of God.",
+      "important": "Praying in the Spirit is not a second-tier experience for 'special' Christians. It's a resource given to every believer for the strengthening of their spirit and the building of their inner man. 1 Corinthians 14:4 says it 'edifies'—builds up, strengthens—you personally.\n\nA believer who prays in the Spirit regularly builds herself up in the inner man. The spirit grows stronger. The mind is renewed. The capacity for faith increases. This is not a substitute for understanding-based prayer—it complements it. Together, they cover what no single mode of prayer could cover alone."
     },
     "41": {
-      "date": "2026-06-30"
+      "section": 3,
+      "date": "2026-06-30",
+      "title": "Releasing Your True Identity",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Ephesians 1:3–4 — 'Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ: According as he hath chosen us in him before the foundation of the world, that we should be holy and without blame before him in love.'",
+      "supportingScriptures": [
+        "Romans 8:37 — 'Nay, in all these things we are more than conquerors through him that loved us.'",
+        "1 John 4:17 — 'Herein is our love made perfect, that we may have boldness in the day of judgment: because as he is, so are we in this world.'",
+        "2 Corinthians 2:14 — 'Now thanks be unto God, which always causeth us to triumph in Christ, and maketh manifest the savour of his knowledge by us in every place.'",
+        "Colossians 1:27 — 'To whom God would make known what is the riches of the glory of this mystery among the Gentiles; which is Christ in you, the hope of glory.'"
+      ],
+      "reality": "Your true identity is not your background, your failures, your family history, or your natural abilities. Your true identity is who you are in Christ—chosen before the foundation of the world, blessed with all spiritual blessings, destined for glory. This is not who you are working toward. This is who you already are.\n\nThe entire 100-day journey is really about this: releasing your true identity. Not acquiring something new, but removing the false layers—shame, fear, self-condemnation, religious performance—that have covered over who you actually are in Christ.",
+      "important": "Most of life's limitations come not from lacking resources but from failing to know and occupy your true identity. The woman who knows she is chosen, blessed, holy, and more than a conqueror will live differently—speak differently, decide differently, relate differently—than the woman who still identifies with her failures and lacks.\n\n'As he is, so are we in this world.' Not after we die. Not when we're more mature. In this world. Now. Your identity is already fully established in the spirit. Release it. Let it govern your soul. Let it be seen in your body and your life."
     },
     "42": {
-      "date": "2026-07-01"
+      "section": 3,
+      "date": "2026-07-01",
+      "title": "Mind Your Spirit",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Colossians 3:2 — 'Set your affection on things above, not on things on the earth.'",
+      "supportingScriptures": [
+        "Philippians 4:8 — 'Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.'",
+        "Isaiah 26:3 — 'Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.'",
+        "Romans 8:6 — 'For to be carnally minded is death; but to be spiritually minded is life and peace.'",
+        "Proverbs 4:23 — 'Keep thy heart with all diligence; for out of it are the issues of life.'"
+      ],
+      "reality": "'Mind your spirit' is perhaps the single most practical instruction for the Christian life. What you set your mind on is what grows strong. What grows strong is what governs your life. If you set your mind on problems, fear, and failure—those grow strong. If you set your mind on spiritual realities—peace, identity, provision, victory—those grow strong.\n\nThe soul is the battleground. Satan cannot touch your spirit. He cannot un-save you. But he can wage war in your soul—putting thoughts in your mind, stirring emotions, creating spiritual doubt—hoping to separate you in practice from the realities your spirit already holds.",
+      "important": "'Set your affection'—the word is phroneoite, meaning to have the mindset, to think about deliberately, to orient yourself toward. This is not passive. You choose what you set your mind on. You have to actively redirect your thoughts from earthly things to heavenly realities.\n\nThe practice: throughout your day, when your mind drifts to anxiety, comparison, or fear, consciously redirect it. 'What is true about me in Christ? What is true about God? What is He doing in this?' This is not denial. This is minding your spirit—keeping the inner life in top condition so it can govern the outer life well."
     },
     "43": {
-      "date": "2026-07-02"
+      "section": 3,
+      "date": "2026-07-02",
+      "title": "Time to Leave!—Living with Eternal Perspective",
+      "recommended": "Andrew Wommack - Spirit, Soul & Body",
+      "mainScripture": "Philippians 1:21–23 — 'For to me to live is Christ, and to die is gain. But if I live in the flesh, this is the fruit of my labour: yet what I shall choose I wot not. For I am in a strait betwixt two, having a desire to depart, and to be with Christ; which is far better.'",
+      "supportingScriptures": [
+        "2 Corinthians 5:6–8 — 'Therefore we are always confident, knowing that, whilst we are at home in the body, we are absent from the Lord: (For we walk by faith, not by sight:) We are confident, I say, and willing rather to be absent from the body, and to be present with the Lord.'",
+        "Romans 8:18 — 'For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us.'",
+        "1 Corinthians 2:9 — 'But as it is written, Eye hath not seen, nor ear heard, neither have entered into the heart of man, the things which God hath prepared for them that love him.'",
+        "Revelation 21:4 — 'And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.'"
+      ],
+      "reality": "The entire Spirit, Soul & Body series arrives at this: you are not primarily a physical being having a spiritual experience. You are a spirit being having a temporary physical experience. This body is not your permanent home. This earth is not your final destination.\n\nPaul says 'to die is gain' because he understood that to leave the body is to be fully present with Christ—no longer operating through the limited lens of soul and body, but face to face. The death of the body releases the spirit into its fullest expression.",
+      "important": "This eternal perspective changes everything about how you live. When you know this is temporary, you don't cling to earthly things too tightly. You use them, steward them, enjoy them—but you're not dependent on them. Your joy isn't at the mercy of circumstances, because your real life is hidden with Christ in God (Colossians 3:3).\n\nThis is the graduation of the spirit-soul-body understanding: your spirit is your primary reality. Your soul is being renewed to agree with that reality. Your body is serving that reality for a season. And when the body is done, the spirit goes to its origin—not with dread, but with anticipation, because what awaits is 'far better.'"
     },
     "44": {
       "date": "2026-07-03"
